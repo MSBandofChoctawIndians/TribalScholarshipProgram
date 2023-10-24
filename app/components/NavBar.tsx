@@ -1,11 +1,12 @@
-import React from "react";
+"use client"
+
+import React, { useState } from "react";
 import {
   Navbar,
   NavbarBrand,
   NavbarContent,
   NavbarItem,
   Link,
-  Button,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem
@@ -15,20 +16,7 @@ import NextLink from "next/link";
 import { TSPLogo } from "./TSPLogo.jsx";
 
 export default function NavBar() {
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-  const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
-  ];
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const pathname = usePathname();
   return (
@@ -54,26 +42,16 @@ export default function NavBar() {
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Customers
+        <NavbarItem>
+          <Link
+            color={`${pathname === "/about" ? "primary" : "foreground"}`}
+            href="/about"
+            as={NextLink}
+          >
+            About
           </Link>
         </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Integrations
-          </Link>
-        </NavbarItem>
-      </NavbarContent>
-      <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <Link href="#">Login</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Button as={Link} color="primary" href="#" variant="flat">
-            Sign Up
-          </Button>
-        </NavbarItem>
+
       </NavbarContent>
       <NavbarMenu>
         <NavbarMenuItem>
