@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div>
-      Hello World. <Link href="/about">About</Link>
+      <h1 className="text-3xl font-bold underline">Hello, Next.js!</h1>
     </div>
   )
 }
