@@ -1,17 +1,14 @@
-import { NavBar } from './components/NavBar'
+import { Providers } from './providers'
 import './globals.css'
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({children}: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className='dark'>
       <body>
-        <NavBar />
-        {children}
+        <Providers>
+          {children}
+        </Providers>
       </body>
     </html>
-  )
+  );
 }
