@@ -32,7 +32,7 @@ export default function NavBar() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent>
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
           <Link
             color={`${pathname === "/" ? "primary" : "foreground"}`}
@@ -51,8 +51,8 @@ export default function NavBar() {
             About
           </Link>
         </NavbarItem>
-
       </NavbarContent>
+
       <NavbarMenu>
         <NavbarMenuItem>
           <Link
