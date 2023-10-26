@@ -18,6 +18,11 @@ import { TSPLogo } from "./TSPLogo.jsx";
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const menuItems = [
+    { title: 'Home', link: '/'},
+    { title: 'About', link: '/about'}
+  ]
+
   const pathname = usePathname();
   return (
     <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
@@ -54,7 +59,21 @@ export default function NavBar() {
       </NavbarContent>
 
       <NavbarMenu>
-        <NavbarMenuItem>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link 
+              color={
+                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+              }
+              className="w-full"
+              href="{item.link}"
+              size="lg"
+            >
+              {item.title}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+        {/* <NavbarMenuItem>
           <Link
             color={`${pathname === "/" ? "primary" : "foreground"}`}
             className="w-full"
@@ -75,7 +94,7 @@ export default function NavBar() {
           >
             About
           </Link>
-        </NavbarMenuItem>
+        </NavbarMenuItem> */}
       </NavbarMenu>
     </Navbar>
   );
