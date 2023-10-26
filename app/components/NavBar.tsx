@@ -13,15 +13,11 @@ import {
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import NextLink from "next/link";
+import { navLinks } from "./NavLinks.jsx";
 import { TSPLogo } from "./TSPLogo.jsx";
 
 export default function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const menuItems = [
-    { title: 'Home', link: '/'},
-    { title: 'About', link: '/about'}
-  ]
 
   const pathname = usePathname();
   return (
@@ -38,7 +34,18 @@ export default function NavBar() {
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
+        {navLinks.map((link, index) => (
+          <NavbarItem key={`${link}-${index}`}>
+            <Link
+              color={`${pathname === "/" ? "primary": "foreground"}`}
+              href={link.path}
+              as={NextLink}
+            >
+              {link.name}
+            </Link>
+          </NavbarItem>
+        ))}
+        {/* <NavbarItem>
           <Link
             color={`${pathname === "/" ? "primary" : "foreground"}`}
             href="/"
@@ -55,21 +62,21 @@ export default function NavBar() {
           >
             About
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
       </NavbarContent>
 
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+        {navLinks.map((link, index) => (
+          <NavbarMenuItem key={`${link}-${index}`}>
             <Link 
               color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                index === 2 ? "primary" : index === navLinks.length - 1 ? "danger" : "foreground"
               }
               className="w-full"
-              href="${item.link}"
+              href={link.path}
               size="lg"
             >
-              {item.title}
+              {link.path}
             </Link>
           </NavbarMenuItem>
         ))}
