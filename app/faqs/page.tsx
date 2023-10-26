@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export default function About() {
+export default function Faqs() {
   return (
     <>
-      <h1>About Us</h1>
+      <h1>FAQs</h1>
       <div>
         Back to <Link href="/">Home</Link>
       </div>

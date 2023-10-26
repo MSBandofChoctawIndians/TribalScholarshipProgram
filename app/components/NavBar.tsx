@@ -25,15 +25,15 @@ export default function NavBar() {
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="md:hidden"
         />
         <NavbarBrand>
           <TSPLogo />
-          <p className="font-bold text-inherit">ACME</p>
+          <p className="font-bold text-inherit pl-4">TRIBAL SCHOLARSHIP</p>
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      <NavbarContent className="hidden md:flex gap-4" justify="center">
         {navLinks.map((link, index) => (
           <NavbarItem key={`${link}-${index}`}>
             <Link
@@ -76,7 +76,7 @@ export default function NavBar() {
               href={link.path}
               size="lg"
             >
-              {link.path}
+              {link.name}
             </Link>
           </NavbarMenuItem>
         ))}
