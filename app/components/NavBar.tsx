@@ -66,7 +66,7 @@ export default function NavBar() {
                 index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
               className="w-full"
-              href="{item.link}"
+              href="${item.link}"
               size="lg"
             >
               {item.title}
