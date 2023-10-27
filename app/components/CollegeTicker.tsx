@@ -59,11 +59,7 @@ function CollegeTicker() {
       </h1>
       <Ticker duration={20}>
         {colleges.map((item, index) => (
-          <a
-            href={item.link}
-            target="_blank"
-            className="text-black hover:text-slate-500"
-          >
+          <a href={item.link} target="_blank">
             <Image
               key={index}
               src={item.image}
