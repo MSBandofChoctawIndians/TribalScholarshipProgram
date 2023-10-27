@@ -34,13 +34,13 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <header className="relative h-[85vh] min-h-[25rem] w-full mb-12 overflow-hidden">
+      <header className="relative h-[85vh] min-h-[25rem] w-full overflow-hidden">
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute z-10 top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto z-0 -translate-x-1/2 -translate-y-1/2"
         >
           <source src="video/Tashina_Taylor.mp4" type="video/mp4" />
           Your browser does not support the video tag.
