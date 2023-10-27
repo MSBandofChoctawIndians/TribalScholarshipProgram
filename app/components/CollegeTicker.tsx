@@ -55,7 +55,7 @@ function CollegeTicker() {
   return (
     <div className="bg-white py-4">
       <h1 className="text-center text-2xl font-bold text-black">
-        Recent Graduates
+        Recent Graduates From:
       </h1>
       <Ticker duration={20}>
         {colleges.map((item, index) => (

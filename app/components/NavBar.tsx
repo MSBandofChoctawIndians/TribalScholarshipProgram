@@ -27,12 +27,12 @@ export default function NavBar() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="md:hidden"
         />
-        <NavbarBrand>
-          <Link href="/" as={NextLink}>
+        <Link href="/" as={NextLink}>
+          <NavbarBrand>
             <TSPLogo />
-          </Link>
-          <p className="font-bold text-inherit pl-2">TRIBAL SCHOLARSHIP</p>
-        </NavbarBrand>
+            <p className="font-bold text-inherit pl-2">TRIBAL SCHOLARSHIP</p>
+          </NavbarBrand>
+        </Link>
       </NavbarContent>
 
       <NavbarContent className="hidden md:flex gap-4" justify="center">

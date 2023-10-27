@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function About() {
   return (
     <>
-      <article className="prose lg:prose-xl">
+      <article className="prose lg:prose-xl dark:prose-invert">
         <h1>Garlic bread with cheese: What the science tells us</h1>
         <p>
           For years parents have espoused the health benefits of eating garlic
