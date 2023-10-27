@@ -54,7 +54,7 @@ function CollegeTicker() {
   ];
   return (
     <div className="bg-white py-4">
-      <h1 className="text-center text-xl font-bold text-black">
+      <h1 className="text-center text-2xl font-bold text-black">
         Recent Graduates
       </h1>
       <Ticker duration={20}>
