@@ -27,7 +27,7 @@ export default function NavBar() {
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="md:hidden"
         />
-        <Link href="/" as={NextLink}>
+        <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
             <TSPLogo />
             <p className="font-bold text-inherit pl-2">TRIBAL SCHOLARSHIP</p>

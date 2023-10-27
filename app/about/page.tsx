@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function About() {
   return (
-    <>
+    <div className="container mx-auto px-4">
       <article className="prose lg:prose-xl dark:prose-invert">
         <h1>Garlic bread with cheese: What the science tells us</h1>
         <p>
@@ -16,6 +16,6 @@ export default function About() {
           to a series of rabies cases springing up around the country.
         </p>
       </article>
-    </>
+    </div>
   );
 }
