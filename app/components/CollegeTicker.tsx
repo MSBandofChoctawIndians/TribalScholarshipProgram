@@ -66,7 +66,7 @@ function CollegeTicker() {
               alt={item.name}
               height={200}
               width={200}
-              className="m-6 scale-100 hover:scale-110"
+              className="m-6 scale-100 transition duration-300 ease-in-out hover:scale-110"
             />
           </a>
         ))}
