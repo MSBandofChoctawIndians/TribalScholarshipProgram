@@ -54,6 +54,7 @@ export default function NavBar() {
               color={`${pathname === link.path ? "primary" : "foreground"}`}
               className="w-full"
               href={link.path}
+              as={NextLink}
               size="lg"
             >
               {link.name}
