@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import CollegeTicker from "./components/CollegeTicker";
 
 export const metadata: Metadata = {
@@ -30,7 +29,7 @@ export const metadata: Metadata = {
   },
 };
 
-const videos = ["./vid/video01.mp4", "./vid/video02.mp4", "./vid/video03.mp4"];
+// const videos = ["./vid/video01.mp4", "./vid/video02.mp4", "./vid/video03.mp4"];
 
 export default function Page() {
   return (
@@ -45,10 +44,7 @@ export default function Page() {
           muted
           className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
         >
-          <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-set-of-plateaus-seen-from-the-heights-in-a-sunset-26070-large.mp4"
-            type="video/mp4"
-          />
+          <source src="./vid/Tashina_Taylor.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </header>
