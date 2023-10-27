@@ -8,47 +8,47 @@ function CollegeTicker() {
   const colleges = [
     {
       name: "Mississippi State",
-      image: "image/msstate.svg",
+      image: "./image/msstate.svg",
       link: "https://www.msstate.edu",
     },
     {
       name: "Mississippi State",
-      image: "image/msstate.svg",
+      image: "./image/msstate.svg",
       link: "https://www.msstate.edu",
     },
     {
       name: "Mississippi State",
-      image: "image/msstate.svg",
+      image: "./image/msstate.svg",
       link: "https://www.msstate.edu",
     },
     {
       name: "Mississippi State",
-      image: "image/msstate.svg",
+      image: "./image/msstate.svg",
       link: "https://www.msstate.edu",
     },
     {
       name: "Mississippi State",
-      image: "image/msstate.svg",
+      image: "./image/msstate.svg",
       link: "https://www.msstate.edu",
     },
     {
       name: "Mississippi State",
-      image: "image/msstate.svg",
+      image: "./image/msstate.svg",
       link: "https://www.msstate.edu",
     },
     {
       name: "Mississippi State",
-      image: "image/msstate.svg",
+      image: "./image/msstate.svg",
       link: "https://www.msstate.edu",
     },
     {
       name: "Mississippi State",
-      image: "image/msstate.svg",
+      image: "./image/msstate.svg",
       link: "https://www.msstate.edu",
     },
     {
       name: "Mississippi State",
-      image: "image/msstate.svg",
+      image: "./image/msstate.svg",
       link: "https://www.msstate.edu",
     },
   ];
