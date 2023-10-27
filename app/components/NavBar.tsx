@@ -28,7 +28,9 @@ export default function NavBar() {
           className="md:hidden"
         />
         <NavbarBrand>
-          <TSPLogo />
+          <Link href="/" as={NextLink}>
+            <TSPLogo />
+          </Link>
           <p className="font-bold text-inherit pl-2">TRIBAL SCHOLARSHIP</p>
         </NavbarBrand>
       </NavbarContent>
