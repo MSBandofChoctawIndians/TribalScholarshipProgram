@@ -35,8 +35,8 @@ export default function Page() {
   return (
     <>
       <header className="relative flex items-center justify-center h-[85vh] mb-12 overflow-hidden">
-        <div className="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
-          Welcome to my site!
+        <div className="absolute z-30 p-5 text-7xl text-white bottom-0 mix-blend-difference">
+          Building Strong Communities
         </div>
         <video
           autoPlay

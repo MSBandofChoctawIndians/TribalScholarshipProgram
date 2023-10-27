@@ -1,18 +1,18 @@
 // tailwind.config.js
-import {nextui} from "@nextui-org/react";
+import { nextui } from "@nextui-org/react";
 
 /** @type {import('tailwindcss').Config} */
 const config = {
   content: [
-    './app/**/*.{js,ts,tsx,mdx}',
-    './app/components/**/*.{js,ts,tsx,mdx}',
-    './node_modules/@nextui-org/theme/dist/**/*.{js,ts,tsx,mdx}',
+    "./app/**/*.{js,ts,tsx,mdx}",
+    "./app/components/**/*.{js,ts,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,tsx,mdx}",
   ],
   theme: {
     extend: {},
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [require("@tailwindcss/typography"), nextui()],
 };
 
 export default config;
