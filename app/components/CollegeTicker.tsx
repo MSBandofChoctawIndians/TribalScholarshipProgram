@@ -2,25 +2,77 @@
 
 import React from "react";
 import Ticker from "framer-motion-ticker";
+import Image from "next/image";
 
 function CollegeTicker() {
-  const colors = ["#632bf3", "#f122c8", "#f16022", "#9ef344", "#44d3f3"];
+  const colleges = [
+    {
+      name: "Mississippi State",
+      image: "image/msstate.svg",
+      link: "https://www.msstate.edu",
+    },
+    {
+      name: "Mississippi State",
+      image: "image/msstate.svg",
+      link: "https://www.msstate.edu",
+    },
+    {
+      name: "Mississippi State",
+      image: "image/msstate.svg",
+      link: "https://www.msstate.edu",
+    },
+    {
+      name: "Mississippi State",
+      image: "image/msstate.svg",
+      link: "https://www.msstate.edu",
+    },
+    {
+      name: "Mississippi State",
+      image: "image/msstate.svg",
+      link: "https://www.msstate.edu",
+    },
+    {
+      name: "Mississippi State",
+      image: "image/msstate.svg",
+      link: "https://www.msstate.edu",
+    },
+    {
+      name: "Mississippi State",
+      image: "image/msstate.svg",
+      link: "https://www.msstate.edu",
+    },
+    {
+      name: "Mississippi State",
+      image: "image/msstate.svg",
+      link: "https://www.msstate.edu",
+    },
+    {
+      name: "Mississippi State",
+      image: "image/msstate.svg",
+      link: "https://www.msstate.edu",
+    },
+  ];
   return (
     <div className="bg-white py-4">
       <h1 className="text-center text-xl font-bold text-black">
         Recent Graduates
       </h1>
       <Ticker duration={20}>
-        {colors.map((item, index) => (
-          <div
-            key={index}
-            style={{
-              backgroundColor: item,
-              margin: "5px",
-              height: "250px",
-              width: "200px",
-            }}
-          />
+        {colleges.map((item, index) => (
+          <a
+            href={item.link}
+            target="_blank"
+            className="text-black hover:text-slate-500"
+          >
+            <Image
+              key={index}
+              src={item.image}
+              alt={item.name}
+              height={200}
+              width={200}
+              className="m-6"
+            />
+          </a>
         ))}
       </Ticker>
     </div>
