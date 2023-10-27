@@ -1,6 +1,17 @@
 export default function About() {
   return (
     <div className="mt-8 mx-4 prose prose-slate mx-auto md:prose-lg lg:prose-xl dark:prose-invert">
+      <figure>
+        <img
+          src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
+          alt=""
+        />
+        <figcaption>
+          Contrary to popular belief, Lorem Ipsum is not simply random text. It
+          has roots in a piece of classical Latin literature from 45 BC, making
+          it over 2000 years old.
+        </figcaption>
+      </figure>
       <p className="lead">Halito! Welcome to the Tribal Scholarship Program!</p>
       <p>
         The Mississippi Band of Choctaw Indians has consistently placed
