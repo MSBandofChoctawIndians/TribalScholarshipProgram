@@ -1,5 +1,12 @@
 "use client";
-import { animate, motion, useMotionValue, useTransform } from "framer-motion";
+import {
+  animate,
+  domAnimation,
+  LazyMotion,
+  m,
+  useMotionValue,
+  useTransform,
+} from "framer-motion";
 import { useEffect } from "react";
 
 export default function Stats() {
@@ -50,7 +57,9 @@ export default function Stats() {
                 </p>
               </dt>
               <dd className="mt-2 ml-16 text-3xl font-extrabold text-indigo-600">
-                <motion.div>{rounded}</motion.div>k
+                <LazyMotion features={domAnimation}>
+                  <m.div>{rounded}</m.div>k
+                </LazyMotion>
               </dd>
             </div>
             <div className="relative">
