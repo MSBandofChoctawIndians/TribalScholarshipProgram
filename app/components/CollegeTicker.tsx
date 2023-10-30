@@ -5,6 +5,7 @@ import Ticker from "framer-motion-ticker";
 import Image from "next/image";
 
 function CollegeTicker() {
+  const [isPlaying, setIsPlaying] = React.useState(true);
   const colleges = [
     {
       name: "Mississippi State",
@@ -52,10 +53,10 @@ function CollegeTicker() {
       link: "https://www.msstate.edu",
     },
   ];
-  const [isPlaying, setIsPlaying] = React.useState(true);
+
   return (
     <div className="bg-white py-4">
-      <h1 className="text-center text-2xl font-bold text-black">
+      <h1 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         Recent Graduates From:
       </h1>
       <Ticker duration={20}>
