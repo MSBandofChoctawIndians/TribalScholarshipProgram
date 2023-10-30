@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import CollegeTicker from "./components/CollegeTicker";
+import Stats from "./components/Stats";
 
 export const metadata: Metadata = {
   title: "Home | Tribal Scholarship Program",
@@ -48,6 +50,7 @@ export default function Page() {
       </header>
       <div>
         <CollegeTicker />
+        <Stats />
       </div>
     </>
   );
