@@ -1,18 +1,13 @@
+"use client";
 import Ticker from "framer-motion-ticker";
 import React from "react";
 
-function App() {
-  const [isPlaying, setIsPlaying] = React.useState(true);
+function CarouselTicker() {
   const colors = ["#632bf3", "#f122c8", "#f16022", "#9ef344", "#44d3f3"];
 
   return (
-    <div className="App">
-      <Ticker
-        duration={5}
-        onMouseEnter={() => setIsPlaying(false)}
-        onMouseLeave={() => setIsPlaying(true)}
-        isPlaying={isPlaying}
-      >
+    <div>
+      <Ticker duration={5} isPlaying={true}>
         {colors.map((item, index) => (
           <div
             key={index}
@@ -29,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+export default CarouselTicker;

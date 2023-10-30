@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import App from "./components/Ticker";
+import CarouselTicker from "./components/Ticker";
 import Stats from "./components/Stats";
 
 export const metadata: Metadata = {
@@ -49,7 +49,7 @@ export default function Page() {
         </video>
       </header>
       <div>
-        <App />
+        <CarouselTicker />
         <Stats />
       </div>
     </>
