@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import CarouselTicker from "./components/Ticker";
+import CollegeTicker from "./components/Ticker";
 import Stats from "./components/Stats";
 
 export const metadata: Metadata = {
@@ -36,20 +36,23 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <header className="relative h-[85vh] min-h-[25rem] w-full overflow-hidden">
+      <header className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+        <div className="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
+          Welcome to my site!
+        </div>
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto z-0 -translate-x-1/2 -translate-y-1/2"
+          className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
         >
           <source src="video/Tashina_Taylor.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </header>
       <div>
-        <CarouselTicker />
+        <CollegeTicker />
         <Stats />
       </div>
     </>

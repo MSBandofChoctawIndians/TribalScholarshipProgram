@@ -11,10 +11,10 @@
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "framer-motion": "^10.16.4",
-    "framer-motion-ticker": "^1.0.19",
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-fast-marquee": "^1.6.2",
     "typescript": "^5.2.2"
   },
   "devDependencies": {
