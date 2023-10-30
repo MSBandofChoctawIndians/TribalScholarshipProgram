@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import CollegeTicker from "./components/CollegeTicker";
+import App from "./components/Ticker";
 import Stats from "./components/Stats";
 
 export const metadata: Metadata = {
@@ -49,7 +49,7 @@ export default function Page() {
         </video>
       </header>
       <div>
-        <CollegeTicker />
+        <App />
         <Stats />
       </div>
     </>
