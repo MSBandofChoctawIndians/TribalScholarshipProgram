@@ -4,6 +4,7 @@ import {
   domAnimation,
   LazyMotion,
   m,
+  spring,
   useMotionValue,
   useTransform,
 } from "framer-motion";
@@ -58,7 +59,10 @@ export default function Stats() {
               </dt>
               <dd className="mt-2 ml-16 text-3xl font-extrabold text-indigo-600">
                 <LazyMotion features={domAnimation}>
-                  <m.div>{rounded}</m.div>k
+                  <m.div transition={{ type: spring, stiffness: 100 }}>
+                    {rounded}
+                  </m.div>
+                  k
                 </LazyMotion>
               </dd>
             </div>

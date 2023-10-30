@@ -59,7 +59,12 @@ function CollegeTicker() {
       <h1 className="text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
         Recent Graduates From:
       </h1>
-      <Ticker duration={20}>
+      <Ticker
+        duration={20}
+        onMouseEnter={() => setIsPlaying(false)}
+        onMouseLeave={() => setIsPlaying(true)}
+        isPlaying={isPlaying}
+      >
         {colleges.map((item, index) => (
           <a href={item.link} target="_blank">
             <Image
