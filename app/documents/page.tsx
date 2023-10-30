@@ -1,3 +1,4 @@
+"use client";
 export default function Documents() {
   return (
     <div className="mt-8 prose prose-slate mx-auto md:prose-lg lg:prose-xl dark:prose-invert">

@@ -1,4 +1,17 @@
+"use client";
+import { animate, motion, useMotionValue, useTransform } from "framer-motion";
+import { useEffect } from "react";
+
 export default function Stats() {
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => Math.round(latest));
+
+  useEffect(() => {
+    const controls = animate(count, 100);
+
+    return controls.stop;
+  }, []);
+
   return (
     <section className="py-12 bg-white dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -37,7 +50,7 @@ export default function Stats() {
                 </p>
               </dt>
               <dd className="mt-2 ml-16 text-3xl font-extrabold text-indigo-600">
-                24k
+                <motion.div>{rounded}</motion.div>k
               </dd>
             </div>
             <div className="relative">
