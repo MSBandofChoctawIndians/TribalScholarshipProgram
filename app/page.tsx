@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <>
-      <header className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+      <header className="relative flex items-center justify-center h-[85vh] mb-12 overflow-hidden">
         <div className="relative z-30 p-5 text-2xl text-white bg-purple-300 bg-opacity-50 rounded-xl">
           Welcome to my site!
         </div>
@@ -45,7 +45,7 @@ export default function Page() {
           loop
           muted
           playsInline
-          className="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+          className="absolute z-10 w-auto min-w-full min-h-[85vh] max-w-none"
         >
           <source src="video/Tashina_Taylor.mp4" type="video/mp4" />
           Your browser does not support the video tag.
