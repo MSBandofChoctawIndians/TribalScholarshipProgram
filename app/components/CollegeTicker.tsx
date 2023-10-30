@@ -52,8 +52,9 @@ function CollegeTicker() {
       link: "https://www.msstate.edu",
     },
   ];
+  const [isPlaying, setIsPlaying] = React.useState(true);
   return (
-    <div className="bg-slate-300 py-4">
+    <div className="bg-white py-4">
       <h1 className="text-center text-2xl font-bold text-black">
         Recent Graduates From:
       </h1>
