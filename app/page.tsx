@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { Image } from "@nextui-org/react";
 import CollegeTicker from "./components/Ticker";
 import Stats from "./components/Stats";
 
@@ -56,12 +56,13 @@ export default function Page() {
       <div>
         <CollegeTicker />
       </div>
-      <div className="mx-4">
-        <div className="mt-8 prose prose-slate mx-auto md:prose-lg lg:prose-xl dark:prose-invert">
+      <section className="max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-0 mt-8">
+        <div className="prose prose-slate mx-auto md:prose-lg lg:prose-xl max-w-none dark:prose-invert">
           <figure>
-            <img
-              src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
-              alt=""
+            <Image
+              width={1024}
+              src="./images/tspstaff2.webp"
+              alt="Tribal Scholarship Program Staff"
             />
           </figure>
           <p className="lead">
@@ -106,7 +107,7 @@ export default function Page() {
             to receiving funding through the Tribal Scholarship Program.
           </p>
         </div>
-      </div>
+      </section>
       <Stats />
     </>
   );

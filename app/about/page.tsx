@@ -1,7 +1,7 @@
 export default function About() {
   return (
-    <div className="mx-4">
-      <div className="mt-8 mx-4 prose prose-slate mx-auto md:prose-lg lg:prose-xl dark:prose-invert">
+    <section className="max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-8 mt-8">
+      <div className="prose prose-slate mx-auto md:prose-lg lg:prose-xl dark:prose-invert">
         <figure>
           <img
             src="https://images.unsplash.com/photo-1556740758-90de374c12ad?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80"
@@ -69,6 +69,6 @@ export default function About() {
           processed.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
