@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Image } from "@nextui-org/react";
+import VideoBackground from "./components/VideoBackground";
 import CollegeTicker from "./components/Ticker";
-import Stats from "./components/Stats";
 
 export const metadata: Metadata = {
   title: "Home | Tribal Scholarship Program",
@@ -31,31 +31,19 @@ export const metadata: Metadata = {
   },
 };
 
-// const videos = ["./video/video01.mp4", "./video/video02.mp4", "./video/video03.mp4"];
+const videoPlaylist = [
+  { url: "./video/Ashlynn_Willis.mp4" },
+  { url: "./video/Jade_Willis.mp4" },
+  { url: "./video/Kelli_Jones.mp4" },
+  { url: "./video/Miriam_Curry.mp4" },
+  { url: "./video/Tashina_Taylor.mp4" },
+];
 
 export default function Page() {
   return (
     <>
-      <header className="relative flex items-center justify-center h-[85vh] overflow-hidden">
-        <div className="relative z-30 p-5 bg-black bg-opacity-50 rounded-xl self-end mb-5 max-w-[1024px]">
-          <h2 className="text-base text-3xl md:text-5xl text-white text-center font-semibold tracking-wide">
-            Elevating Indigenous Voices, One Scholarship at a Time
-          </h2>
-        </div>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute z-10 w-auto min-w-full min-h-[85vh] max-w-none max-h-[85vh]"
-        >
-          <source src="video/Tashina_Taylor.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </header>
-      <div>
-        <CollegeTicker />
-      </div>
+      <VideoBackground videos={videoPlaylist} />
+      <CollegeTicker />
       <section className="max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-0 mt-8">
         <div className="prose prose-slate mx-auto md:prose-lg lg:prose-xl max-w-none dark:prose-invert">
           <figure>
@@ -111,7 +99,6 @@ export default function Page() {
           </p>
         </div>
       </section>
-      <Stats />
     </>
   );
 }

@@ -1,14 +1,20 @@
-import { Providers } from './providers'
-import './globals.css'
-import NavBar from './components/NavBar';
+import { Providers } from "./providers";
+import "./globals.css";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
 
-export default function RootLayout({children}: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" className='dark'>
+    <html lang="en" className="dark">
       <body>
         <Providers>
           <NavBar />
           {children}
+          <Footer />
         </Providers>
       </body>
     </html>
