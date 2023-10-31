@@ -1,5 +1,5 @@
 1:HL["/TribalScholarshipProgram/_next/static/css/b94684e1f0e6258d.css","style",{"crossOrigin":""}]
-0:["mVgviwGk79Evr8gtxL1PC",[[["",{"children":["documents",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/TribalScholarshipProgram/_next/static/css/b94684e1f0e6258d.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
+0:["wyGikscwe_2tRaaqWfT52",[[["",{"children":["documents",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/TribalScholarshipProgram/_next/static/css/b94684e1f0e6258d.css","precedence":"next","crossOrigin":""}]],"$L3"]]]]
 4:I[3205,["326","static/chunks/326-7d2262bac6230910.js","240","static/chunks/240-5309b347bf28a6b8.js","185","static/chunks/app/layout-6589fb55ee635f1c.js"],"Providers"]
 5:I[6792,["326","static/chunks/326-7d2262bac6230910.js","240","static/chunks/240-5309b347bf28a6b8.js","185","static/chunks/app/layout-6589fb55ee635f1c.js"],""]
 6:I[6954,[],""]
