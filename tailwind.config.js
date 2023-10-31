@@ -12,7 +12,22 @@ const config = {
     extend: {},
   },
   darkMode: "class",
-  plugins: [require("@tailwindcss/typography"), nextui()],
+  plugins: [
+    require("@tailwindcss/typography"),
+    nextui({
+      themes: {
+        dark: {
+          colors: {
+            danger: {
+              DEFAULT: "#660032",
+              foreground: "#FFFFFF",
+            },
+            focus: "#660032",
+          },
+        },
+      },
+    }),
+  ],
 };
 
 export default config;

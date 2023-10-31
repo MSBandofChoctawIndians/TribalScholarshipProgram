@@ -52,8 +52,8 @@ export default function CollegeTicker() {
     },
   ];
   return (
-    <div className="bg-white py-4">
-      <h1 className="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+    <div className="bg-[#660032] py-4">
+      <h1 className="text-center text-3xl leading-8 font-extrabold tracking-tight sm:text-4xl">
         Recent Graduates From:
       </h1>
       <Marquee>

@@ -10,6 +10,7 @@ import {
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
+  Button,
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import NextLink from "next/link";
@@ -39,7 +40,7 @@ export default function NavBar() {
         {navLinks.map((link, index) => (
           <NavbarItem key={`${link}-${index}`}>
             <Link
-              color={`${pathname === link.path ? "primary" : "foreground"}`}
+              color={`${pathname === link.path ? "danger" : "foreground"}`}
               href={link.path}
               as={NextLink}
             >
@@ -47,6 +48,11 @@ export default function NavBar() {
             </Link>
           </NavbarItem>
         ))}
+        <NavbarItem>
+          <Button as={Link} color="danger" href="#" variant="solid">
+            Apply Now
+          </Button>
+        </NavbarItem>
       </NavbarContent>
 
       <NavbarMenu>
@@ -63,6 +69,11 @@ export default function NavBar() {
             </Link>
           </NavbarMenuItem>
         ))}
+        <NavbarItem>
+          <Button as={Link} color="danger" href="#" variant="solid">
+            Apply Now
+          </Button>
+        </NavbarItem>
       </NavbarMenu>
     </Navbar>
   );

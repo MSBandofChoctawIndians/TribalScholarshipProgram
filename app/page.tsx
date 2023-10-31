@@ -37,8 +37,8 @@ export default function Page() {
   return (
     <>
       <header className="relative flex items-center justify-center h-[85vh] mb-12 overflow-hidden">
-        <div className="relative z-30 p-5 bg-black bg-opacity-75 rounded-xl self-end mb-5 max-w-[1024px]">
-          <h2 className="text-base text-2xl md:text-5xl text-white text-center font-semibold tracking-wide">
+        <div className="relative z-30 p-5 bg-black bg-opacity-50 rounded-xl self-end mb-5 max-w-[1024px]">
+          <h2 className="text-base text-3xl md:text-5xl text-white text-center font-semibold tracking-wide">
             Elevating Indigenous Voices, One Scholarship at a Time
           </h2>
         </div>
