@@ -63,6 +63,9 @@ export default function Page() {
               width={1024}
               src="./image/tspstaff2.webp"
               alt="Tribal Scholarship Program Staff"
+              radius="none"
+              shadow="none"
+              loading="lazy"
             />
           </figure>
           <p className="lead">
