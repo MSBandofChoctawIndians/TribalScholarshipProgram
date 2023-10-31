@@ -61,7 +61,7 @@ export default function Page() {
           <figure>
             <Image
               width={1024}
-              src="./images/tspstaff2.webp"
+              src="./image/tspstaff2.webp"
               alt="Tribal Scholarship Program Staff"
             />
           </figure>
