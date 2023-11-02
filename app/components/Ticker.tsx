@@ -8,47 +8,32 @@ export default function CollegeTicker() {
     {
       name: "Mississippi State",
       image: "./image/msstate.svg",
-      link: "https://www.msstate.edu",
+      link: "https://www.msstate.edu/",
     },
     {
-      name: "Mississippi State",
-      image: "./image/msstate.svg",
-      link: "https://www.msstate.edu",
+      name: "Jones College",
+      image: "./image/jones.svg",
+      link: "https://www.jcjc.edu/",
     },
     {
-      name: "Mississippi State",
-      image: "./image/msstate.svg",
-      link: "https://www.msstate.edu",
+      name: "New York Medical College",
+      image: "./image/nymc.svg",
+      link: "https://www.nymc.edu/",
     },
     {
-      name: "Mississippi State",
-      image: "./image/msstate.svg",
-      link: "https://www.msstate.edu",
+      name: "Delta State",
+      image: "./image/deltastate.svg",
+      link: "https://www.deltastate.edu/",
     },
     {
-      name: "Mississippi State",
-      image: "./image/msstate.svg",
-      link: "https://www.msstate.edu",
+      name: "East Central Community College",
+      image: "./image/eccc.svg",
+      link: "https://www.eccc.edu/",
     },
     {
-      name: "Mississippi State",
-      image: "./image/msstate.svg",
-      link: "https://www.msstate.edu",
-    },
-    {
-      name: "Mississippi State",
-      image: "./image/msstate.svg",
-      link: "https://www.msstate.edu",
-    },
-    {
-      name: "Mississippi State",
-      image: "./image/msstate.svg",
-      link: "https://www.msstate.edu",
-    },
-    {
-      name: "Mississippi State",
-      image: "./image/msstate.svg",
-      link: "https://www.msstate.edu",
+      name: "Belhaven University",
+      image: "./image/belhaven.svg",
+      link: "https://www.belhaven.edu/",
     },
   ];
   return (

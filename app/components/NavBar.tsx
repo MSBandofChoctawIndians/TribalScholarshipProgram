@@ -22,21 +22,33 @@ export default function NavBar() {
 
   const pathname = usePathname();
   return (
-    <Navbar shouldHideOnScroll onMenuOpenChange={setIsMenuOpen}>
-      <NavbarContent>
+    <Navbar
+      shouldHideOnScroll
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+    >
+      <NavbarContent className="md:hidden" justify="start">
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="md:hidden"
         />
+      </NavbarContent>
+
+      <NavbarContent className="md:hidden pr-3" justify="center">
+        <Link href="/" color={"foreground"} as={NextLink}>
+          <NavbarBrand>
+            <TSPLogo />
+            <p className="font-bold text-inherit">TRIBAL SCHOLARSHIP</p>
+          </NavbarBrand>
+        </Link>
+      </NavbarContent>
+
+      <NavbarContent className="hidden md:flex gap-4" justify="center">
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
             <TSPLogo />
             <p className="font-bold text-inherit pl-2">TRIBAL SCHOLARSHIP</p>
           </NavbarBrand>
         </Link>
-      </NavbarContent>
-
-      <NavbarContent className="hidden md:flex gap-4" justify="center">
         {navLinks.map((link, index) => (
           <NavbarItem key={`${link}-${index}`}>
             <Link
@@ -48,6 +60,9 @@ export default function NavBar() {
             </Link>
           </NavbarItem>
         ))}
+      </NavbarContent>
+
+      <NavbarContent justify="end">
         <NavbarItem>
           <Button as={Link} color="danger" href="#" variant="solid">
             Apply Now

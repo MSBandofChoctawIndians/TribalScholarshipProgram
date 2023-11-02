@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Image } from "@nextui-org/react";
-import VideoBackground from "./components/VideoBackground";
 import CollegeTicker from "./components/Ticker";
+import VideoBackground from "./components/VideoBackground";
 
 export const metadata: Metadata = {
   title: "Home | Tribal Scholarship Program",
@@ -31,18 +31,10 @@ export const metadata: Metadata = {
   },
 };
 
-const videoPlaylist = [
-  { url: "./video/Ashlynn_Willis.mp4" },
-  { url: "./video/Jade_Willis.mp4" },
-  { url: "./video/Kelli_Jones.mp4" },
-  { url: "./video/Miriam_Curry.mp4" },
-  { url: "./video/Tashina_Taylor.mp4" },
-];
-
 export default function Page() {
   return (
     <>
-      <VideoBackground videos={videoPlaylist} />
+      <VideoBackground />
       <CollegeTicker />
       <section className="max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-0 mt-8">
         <div className="prose prose-slate mx-auto md:prose-lg lg:prose-xl max-w-none dark:prose-invert">
