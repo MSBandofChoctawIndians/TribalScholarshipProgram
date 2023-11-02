@@ -37,7 +37,7 @@ export default function NavBar() {
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
             <TSPLogo />
-            <p className="font-bold text-inherit">TRIBAL SCHOLARSHIP</p>
+            <p className="font-bold text-inherit">TSP</p>
           </NavbarBrand>
         </Link>
       </NavbarContent>
@@ -84,11 +84,6 @@ export default function NavBar() {
             </Link>
           </NavbarMenuItem>
         ))}
-        <NavbarItem>
-          <Button as={Link} color="danger" href="#" variant="solid">
-            Apply Now
-          </Button>
-        </NavbarItem>
       </NavbarMenu>
     </Navbar>
   );
