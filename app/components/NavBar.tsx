@@ -33,7 +33,7 @@ export default function NavBar() {
         />
       </NavbarContent>
 
-      <NavbarContent className="md:hidden pr-3" justify="center">
+      <NavbarContent className="pr-3 md:hidden" justify="center">
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
             <TSPLogo />
@@ -42,11 +42,11 @@ export default function NavBar() {
         </Link>
       </NavbarContent>
 
-      <NavbarContent className="hidden md:flex gap-4" justify="center">
+      <NavbarContent className="hidden gap-4 md:flex" justify="center">
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
             <TSPLogo />
-            <p className="font-bold text-inherit pl-2">TRIBAL SCHOLARSHIP</p>
+            <p className="pl-2 font-bold text-inherit">TRIBAL SCHOLARSHIP</p>
           </NavbarBrand>
         </Link>
         {navLinks.map((link, index) => (

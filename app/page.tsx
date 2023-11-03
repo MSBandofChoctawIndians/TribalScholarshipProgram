@@ -36,8 +36,8 @@ export default function Page() {
     <>
       <VideoBackground />
       <CollegeTicker />
-      <section className="max-w-[1024px] mx-auto px-4 sm:px-6 lg:px-0 mt-8">
-        <div className="prose prose-slate mx-auto md:prose-lg lg:prose-xl max-w-none dark:prose-invert">
+      <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
+        <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
           <figure>
             <Image
               width={1024}

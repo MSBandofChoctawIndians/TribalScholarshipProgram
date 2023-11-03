@@ -31,16 +31,16 @@ const VideoBackground = () => {
   }, [currentVideoIndex, videos]);
 
   return (
-    <header className="relative flex items-center justify-center h-[85vh] overflow-hidden">
-      <div className="relative z-30 p-5 self-end mb-5 max-w-[1024px] bg-black bg-opacity-50 rounded-md flex flex-col md:flex-row items-center justify-between">
-        <div className="flex items-center mb-4 md:mb-0">
+    <header className="relative flex h-[85vh] items-center justify-center overflow-hidden">
+      <div className="relative z-30 mb-5 flex max-w-[1024px] flex-col items-center justify-between self-end rounded-md bg-black bg-opacity-50 p-5 md:flex-row">
+        <div className="mb-4 flex items-center md:mb-0">
           <img src="./image/TSPlogo.webp" alt="Logo" className="h-40 w-auto" />
         </div>
-        <div className="text-white text-center md:text-right md:ml-4">
-          <h2 className="text-2xl md:text-5xl font-semibold tracking-wide mb-2">
+        <div className="text-center text-white md:ml-4 md:text-right">
+          <h2 className="mb-2 text-2xl font-semibold tracking-wide md:text-5xl">
             Elevating Indigenous Voices,
           </h2>
-          <h2 className="text-2xl md:text-5xl font-semibold tracking-wide">
+          <h2 className="text-2xl font-semibold tracking-wide md:text-5xl">
             One Scholarship at a Time
           </h2>
         </div>
@@ -51,7 +51,7 @@ const VideoBackground = () => {
         muted
         loop
         playsInline
-        className="absolute z-10 w-auto min-w-full min-h-[85vh] max-w-none max-h-[85vh]"
+        className="absolute z-10 max-h-[85vh] min-h-[85vh] w-auto min-w-full max-w-none"
         ref={videoRef}
       ></video>
     </header>
