@@ -8,9 +8,12 @@ const VideoBackground = () => {
   const videos = [
     "./video/Ashlynn_Willis.mp4",
     "./video/Candice_York.mp4",
+    "./video/Deona_Allen.mp4",
     "./video/Jade_Willis.mp4",
     "./video/Kelli_Jones.mp4",
+    "./video/Latricia_Johnson.mp4",
     "./video/Miriam_Curry.mp4",
+    "./video/Stephanie_Langford.mp4",
     "./video/Tashina_Taylor.mp4",
   ];
 
