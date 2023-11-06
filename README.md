@@ -8,7 +8,7 @@ This website is the landing page for the Tribal Scholarship Program for the Miss
 
 ### Frameworks
 
-[React 18](https://react.dev) | [Next.js 14](https://nextjs.org) | [Tailwind 3.3.5](https://tailwindcss.com) | [NextUI](https://nextui.org) | [Framer Motion](https://www.framer.com/motion/)
+[React v18.2.0](https://react.dev) | [Next.js v14](https://nextjs.org) | [Tailwind v3.3.5](https://tailwindcss.com) | [NextUI v2.2.4](https://nextui.org) | [Framer Motion v10.16.4](https://www.framer.com/motion/)
 
 ## Features
 
