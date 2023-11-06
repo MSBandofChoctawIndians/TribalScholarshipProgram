@@ -1,8 +1,6 @@
 <p align="center">
   <a href="https://msbandofchoctawindians.github.io/TribalScholarshipProgram/">
-    <picture>
-      <img src="https://msbandofchoctawindians.github.io/TribalScholarshipProgram/image/TSPlogo.webp" height="128">
-    </picture>
+    <img src="https://msbandofchoctawindians.github.io/TribalScholarshipProgram/image/TSPlogo.webp" height="128">
     <h1 align="center">Tribal Scholarship Program</h1>
   </a>
 </p>
