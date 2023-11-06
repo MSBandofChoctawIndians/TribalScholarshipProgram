@@ -14,10 +14,17 @@ import {
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import NextLink from "next/link";
-import { navLinks } from "./NavLinks.jsx";
 import { TSPLogo } from "./TSPLogo.jsx";
 
 export default function NavBar() {
+  const navLinks = [
+    { name: "About Us", path: "/about" },
+    { name: "Documents", path: "/documents" },
+    { name: "FAQs", path: "/faqs" },
+    { name: "Location", path: "/location" },
+    { name: "Other Scholarships", path: "/otherscholarships" },
+  ];
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const pathname = usePathname();

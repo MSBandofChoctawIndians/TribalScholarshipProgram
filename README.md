@@ -1,33 +1,25 @@
-# Deploying to GitHub Pages
+![Tribal Scholarship Program](https://msbandofchoctawindians.github.io/TribalScholarshipProgram/image/TSPlogo.webp)
 
-This example supports deploying a statically exported Next.js application to GitHub Pages.
+# Tribal Scholarship Program
 
-The `out` directory should not be ignored by version control.
+## Description
 
-## How to use
+This website is the landing page for the Tribal Scholarship Program for the Mississippi Band of Choctaw Indians.
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+### Frameworks
 
-```bash
-npx create-next-app --example github-pages nextjs-github-pages
-# or
-yarn create next-app --example github-pages nextjs-github-pages
-# or
-pnpm create next-app --example github-pages nextjs-github-pages
-```
+[React 18](https://react.dev)
+[Next.js 14](https://nextjs.org)
+[Tailwind 3.3.5](https://tailwindcss.com)
+[NextUI](https://nextui.org)
+[Framer Motion](https://www.framer.com/motion/)
 
-### Deploy to GitHub Pages
+## Features
 
-1.  Create a new public GitHub repository.
-1.  Edit `next.config.js` to match your GitHub repository name.
-1.  Push the starter code to the `main` branch.
-1.  Run the `deploy` script (e.g. `npm run deploy`) to create the `gh-pages` branch.
-1.  On GitHub, go to **Settings** > **Pages** > **Branch**, and choose `gh-pages` as the branch with the `/root` folder. Hit **Save**.
-1.  Make a change.
-1.  Run the `deploy` script again to push the changes to GitHub Pages.
+### Video Background
 
-Congratulations! You should have a URL like:
+Videos are stored in `public/video/...`. In order to modify the playlist, you'll need to add the video URL to the `videos` array in `app/components/VideoBackground.tsx` then run `npm run deploy` in terminal.
 
-```bash
-https://<github-user-name>.github.io/<github-project-name>/
-```
+### Ticker
+
+Institution logos (SVG or PNG) are stored in `public/image/...`. In order to modify the ticker, you'll need to add the image name, image url, and cooresponding website to the `colleges` array in `public/components/Ticker.tsx` then run `npm run deploy` in terminal.

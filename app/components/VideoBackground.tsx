@@ -1,4 +1,5 @@
 "use client";
+import { Image } from "@nextui-org/react";
 import React, { useState, useEffect, useRef } from "react";
 
 const VideoBackground = () => {
@@ -37,7 +38,11 @@ const VideoBackground = () => {
     <header className="relative flex h-[85vh] items-center justify-center overflow-hidden">
       <div className="relative z-30 mb-5 flex max-w-[1024px] flex-col items-center justify-between self-end rounded-md bg-black bg-opacity-50 p-5 md:flex-row">
         <div className="mb-4 flex items-center md:mb-0">
-          <img src="./image/TSPlogo.webp" alt="Logo" className="h-40 w-auto" />
+          <Image
+            src="./image/TSPlogo.webp"
+            alt="Logo"
+            className="h-40 w-auto"
+          />
         </div>
         <div className="text-center text-white md:ml-4 md:text-right">
           <h2 className="mb-2 text-2xl font-semibold tracking-wide md:text-5xl">
