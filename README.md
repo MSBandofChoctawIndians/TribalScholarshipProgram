@@ -10,7 +10,7 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/Nextjs-v14-FFF?logo=nextdotjs&link=https%3A%2F%2Fnextjs.org">
   <img alt="Static Badge" src="https://img.shields.io/badge/Tailwind%20CSS-v3.3.5-06B6D4?logo=tailwindcss&link=https%3A%2F%2Ftailwindcss.com">
   <img alt="Static Badge" src="https://img.shields.io/badge/NextUI-v2.2.4-000?logo=nextui&link=https%3A%2F%2Fnextui.org">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Framer%20Motion-v2.2.4-05F?logo=framer&link=https%3A%2F%2Fwww.framer.com%2Fmotion%2F">
+  <img alt="Static Badge" src="https://img.shields.io/badge/Framer%20Motion-v10.16.4-05F?logo=framer&link=https%3A%2F%2Fwww.framer.com%2Fmotion%2F">
 </p>
 
 # Tribal Scholarship Program
