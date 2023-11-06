@@ -13,8 +13,6 @@
   <img alt="Static Badge" src="https://img.shields.io/badge/Framer%20Motion-v10.16.4-05F?logo=framer&link=https%3A%2F%2Fwww.framer.com%2Fmotion%2F">
 </p>
 
-# Tribal Scholarship Program
-
 ## Description
 
 This website is the landing page for the Tribal Scholarship Program for the Mississippi Band of Choctaw Indians.
