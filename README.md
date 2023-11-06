@@ -1,4 +1,4 @@
-![Tribal Scholarship Program](https://msbandofchoctawindians.github.io/TribalScholarshipProgram/image/TSPlogo.webp)
+[<img src="https://msbandofchoctawindians.github.io/TribalScholarshipProgram/image/TSPlogo.webp" width="250" />](https://msbandofchoctawindians.github.io/TribalScholarshipProgram/image/TSPlogo.webp)
 
 # Tribal Scholarship Program
 
@@ -8,11 +8,7 @@ This website is the landing page for the Tribal Scholarship Program for the Miss
 
 ### Frameworks
 
-[React 18](https://react.dev)
-[Next.js 14](https://nextjs.org)
-[Tailwind 3.3.5](https://tailwindcss.com)
-[NextUI](https://nextui.org)
-[Framer Motion](https://www.framer.com/motion/)
+[React 18](https://react.dev) | [Next.js 14](https://nextjs.org) | [Tailwind 3.3.5](https://tailwindcss.com) | [NextUI](https://nextui.org) | [Framer Motion](https://www.framer.com/motion/)
 
 ## Features
 

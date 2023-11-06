@@ -1,5 +1,4 @@
 import { Image } from "@nextui-org/react";
-import NextImage from "next/image";
 
 export default function Footer() {
   return (
@@ -7,13 +6,11 @@ export default function Footer() {
       <div className="mx-auto flex max-w-[1024px] flex-col items-center justify-between lg:flex-row">
         <div className="item-center mb-4 flex md:mb-0">
           <Image
-            as={NextImage}
             src="./image/TSPlogo.webp"
             alt="Tribal Scholarship Program"
             className="mr-4 h-20 w-20 lg:h-40 lg:w-40"
           />
           <Image
-            as={NextImage}
             src="./image/seal.webp"
             alt="Mississippi Band of Choctaw Indians"
             className="h-20 w-20 lg:h-40 lg:w-40"
