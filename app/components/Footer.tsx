@@ -8,12 +8,12 @@ export default function Footer() {
           <Image
             src="./image/TSPlogo.webp"
             alt="Tribal Scholarship Program"
-            className="mr-4 h-20 w-20 lg:h-40 lg:w-40"
+            className="mr-4 h-20 w-auto lg:h-40"
           />
           <Image
             src="./image/seal.webp"
             alt="Mississippi Band of Choctaw Indians"
-            className="h-20 w-20 lg:h-40 lg:w-40"
+            className="h-20 w-auto lg:h-40"
           />
         </div>
         <p className="text-md text-center lg:text-right">
