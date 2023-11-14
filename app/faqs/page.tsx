@@ -12,15 +12,35 @@ const faqs = [
   },
   {
     id: 2,
-    question: "Who is eligible for the Tribal Scholarship Program?",
+    question: "How often do I need to apply for the Tribal Scholarship?",
     answer:
-      "To be eligible for the Tribal Scholarship Program, you must be a member of a federally recognized Native American tribe and be enrolled in an accredited college or university.",
+      "Full-time students must complete an application for each academic year and a separate one for the Summer Term, Part-time students are required to submit an application every term.",
   },
   {
     id: 3,
-    question: "How do I apply for the Tribal Scholarship Program?",
+    question:
+      "What are the deadline dates for Tribal Scholarship applications?",
+    answer: "Deadline dates are listed on Page 3 of this Handbook.",
+  },
+  {
+    id: 4,
+    question:
+      "What happens if I turn in my Tribal Scholarship application after the deadline?",
     answer:
-      "To apply for the Tribal Scholarship Program, please visit our website and fill out the online application form.",
+      "Applicants who turn in Tribal Scholarship applications after the deadline will not qualify for a scholarship, but will be encouraged to apply immediately for the next semester/quarter/term.",
+  },
+  {
+    id: 5,
+    question:
+      "How often do I need to submit a Free Application for Federal Student Aid (FAFSA)?",
+    answer: "Students are required to submit a F AFSA for each academic year.",
+  },
+  {
+    id: 6,
+    question:
+      "Why do I need to submit a Free Application for Federal Student Aid?",
+    answer:
+      "When students submit a FAFSA, they are applying for all types of need-based financial aid, plus the FAFSA is required for many other types of financial aid, The Tribal Scholarship is supplemental funding, It covers the portion of the Cost of Attendance not covered by other financial aid for full-time students who do not work full-time. For part-time students and full-time students who work full-time, the Tribal Scholarship covers the portion of tuition, fees and course-related book charges not covered by other financial aid. Thus, students must apply for financial aid by submitting the FAFSA.",
   },
 ];
 
@@ -28,7 +48,7 @@ export default function Page() {
   return (
     <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
       <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
-        <p className="lead">Faqs</p>
+        <p className="lead">FAQs</p>
         <Accordion>
           {faqs.map((faq) => (
             <AccordionItem
