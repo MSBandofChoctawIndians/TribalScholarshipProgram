@@ -40,16 +40,19 @@ export default function Page() {
           assist in the application process to the program and also assist
           students in completing the Free Application for Federal Student Aid
           (FAFSA). FAFSA or Pell Grant applications are done online at{" "}
-          <a href="www.fafsa.ed.gov">www.fafsa.ed.gov</a>. Students should be
-          aware of the Financial Aid Priority deadlines at the colleges and
-          universities each year. Some colleges have an April 1 deadline and
-          will process financial aid requests to those students who have met
-          their deadline first. There are deadlines for applications to be
-          turned in to the Tribal Scholarship Program each school year. Student
-          applications to the Tribal Scholarship Program will be considered
-          complete when all the items on the checklist are in the Tribal
-          scholarship Office by the supporting document deadline. A full-time
-          student's award will be determined when all documents are in.
+          <a href="www.fafsa.ed.gov" className="text-yellow-200">
+            www.fafsa.ed.gov
+          </a>
+          . Students should be aware of the Financial Aid Priority deadlines at
+          the colleges and universities each year. Some colleges have an April 1
+          deadline and will process financial aid requests to those students who
+          have met their deadline first. There are deadlines for applications to
+          be turned in to the Tribal Scholarship Program each school year.
+          Student applications to the Tribal Scholarship Program will be
+          considered complete when all the items on the checklist are in the
+          Tribal scholarship Office by the supporting document deadline. A
+          full-time student's award will be determined when all documents are
+          in.
         </p>
         <p>
           The Tribal Scholarship Program will assist the students in the

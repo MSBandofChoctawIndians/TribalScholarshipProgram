@@ -42,6 +42,47 @@ const faqs = [
     answer:
       "When students submit a FAFSA, they are applying for all types of need-based financial aid, plus the FAFSA is required for many other types of financial aid, The Tribal Scholarship is supplemental funding, It covers the portion of the Cost of Attendance not covered by other financial aid for full-time students who do not work full-time. For part-time students and full-time students who work full-time, the Tribal Scholarship covers the portion of tuition, fees and course-related book charges not covered by other financial aid. Thus, students must apply for financial aid by submitting the FAFSA.",
   },
+  {
+    id: 7,
+    question:
+      "The Financial Aid Office notified me that I was selected for verification. What does that mean? Why was I selected?",
+    answer:
+      "The Federal Government randomly selects applications to verify that the information submitted is correct. Your Financial Aid Office will notify you that you need to contact them and/or send you additional forms to complete.",
+  },
+  {
+    id: 8,
+    question:
+      "What happens if my Student Aid Report says that I am selected for verification?",
+    answer:
+      "The college will instruct you to complete a Verification Worksheet and submit a copy of your tax return, a copy of your parents' tax return if you are a dependent student, and possibly other documents to verify that the information you submitted on your FAFSA is correct.",
+  },
+  {
+    id: 9,
+    question:
+      "Why does the Cost of Attendance set by the school's Financial Aid Office determine the amount of scholarship funds I can receive?",
+    answer:
+      "Because the Tribal Scholarship is defined as supplemental funding, students are required to apply for all available financial aid, including federal financial aid. Regulations that govern federal student financial assistance programs require that the amount of assistance the student receives from all sources does not exceed the Cost of Attendance as defined by the school's Financial Aid office. Additionally, the Cost of Attendance which is set by each school is intended to be, and is a good indication of, the amount that a student should need to attend that school, pay direct charges and have enough additional funds to survive.",
+  },
+  {
+    id: 10,
+    question:
+      "Can I enroll as a full-time student, work full-time and receive living expense funds from the Tribal Scholarship Program?",
+    answer:
+      "No, the Tribal Scholarship will cover only tuition, fees and course-related book charges for full-time students who work full-time.",
+  },
+  {
+    id: 11,
+    question:
+      "If I enroll as a full-time student and don't work full-time, how much 'stipend' will I receive?",
+    answer:
+      "The Tribal Scholarship Program does not provide a 'stipend'. It does, however, provide the difference between the student's Cost of Attendance (COA) and the student's financial aid. Any portion of that amount which is not paid to the school for direct charges, will be disbursed to the student for 'living expenses'. (One exception to this method of computing the student's living expenses award is for the student who has an Off-Campus COA. For that student, the Program will use the OnCampus COA or 80% of the Off-Campus COA, whichever is larger.) Every school that administers federal aid has a set Cost of Attendance for identified categories of students (e.g. On-Campus, Off-Campus, etc.). The Cost of Attendance generally includes, in addition to tuition, fees and books, a set amount for items that are considered necessary for 'living expenses' such as room, board, travel, and miscellaneous expenses. The Tribal Scholarship Program uses the Cost of Attendance figures supplied by the student's chosen school. Because every school sets their own Costs of Attendance and determines the amounts and types of financial aid that a student receives, it is impossible for the Tribal Scholarship Program to give the student an estimate of the amount of living expenses he/she will receive until the application process is completed and the Financial Aid Package Form is received. It should be noted that financial aid at any school, as well as the Tribal Scholarship, should never be looked at as a 'pay check'. Tribal Scholarship funds are available to assist students in obtaining an education.",
+  },
+  {
+    id: 12,
+    question: "How is my Tribal Scholarship award determined?",
+    answer:
+      "Part-time Students: \n The Tribal Scholarship Program will cover the portion of tuition, fees, and course-related book charges not covered by other financial aid for part-time students. \n Full-time Students Who Work Full-time: \n The Tribal Scholarship Program will cover the portion of tuition, fees, and course-related book charges not covered by other financial aid for full-time students who work full-time. \n Full-time students Who Do Not Work Full-time: \n The Financial Aid Office at the college/university will use the results from the FAFSA (the Student Aid Report), to determine the appropriate Cost of Attendance (budget) that will be assigned to each student, the amount of financial aid that the student will receive for the year, and the student's unmet need, after which a Financial Aid Award is prepared. \n The Financial Aid Office must have the above information to complete the Tribal Scholarship Program Financial Aid Package Form (some schools use the term Financial Needs Analysis or FNA for the form), which the Tribal Scholarship Program uses to determine the amount of money the school will allow the student to receive from the Tribal Scholarship Program without reducing the other aid.",
+  },
 ];
 
 export default function Page() {
