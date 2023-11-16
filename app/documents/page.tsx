@@ -90,7 +90,7 @@ export default function Page() {
                   href={document.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-yellow-200 hover:underline"
+                  className="text-rose-500 hover:underline"
                 >
                   {document.name}
                 </a>

@@ -18,8 +18,12 @@ const config = {
       themes: {
         dark: {
           colors: {
+            primary: {
+              DEFAULT: "#4c0519",
+              foreground: "#FFFFFF",
+            },
             warning: {
-              DEFAULT: "#FEF08A",
+              DEFAULT: "#F43F5E",
               foreground: "#000000",
             },
             danger: {

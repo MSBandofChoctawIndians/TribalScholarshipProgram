@@ -6,6 +6,7 @@
     "deploy": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
     "@nextui-org/react": "^2.2.4",
     "@types/node": "^20.8.10",
     "@types/react": "^18.2.36",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.10",
+    "@types/google.maps": "^3.54.7",
     "autoprefixer": "^10.4.16",
     "postcss": "^8.4.31",
     "prettier": "^3.0.3",

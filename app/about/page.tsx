@@ -40,8 +40,13 @@ export default function Page() {
           assist in the application process to the program and also assist
           students in completing the Free Application for Federal Student Aid
           (FAFSA). FAFSA or Pell Grant applications are done online at{" "}
-          <a href="www.fafsa.ed.gov" className="text-yellow-200">
-            www.fafsa.ed.gov
+          <a
+            href="https://www.fafsa.ed.gov"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-rose-500"
+          >
+            https://www.fafsa.ed.gov
           </a>
           . Students should be aware of the Financial Aid Priority deadlines at
           the colleges and universities each year. Some colleges have an April 1
