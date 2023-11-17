@@ -36,6 +36,36 @@ export default function CollegeTicker() {
       image: "./image/belhaven.svg",
       link: "https://www.belhaven.edu/",
     },
+    {
+      name: "Meridian Community College",
+      image: "./image/mcc.svg",
+      link: "https://www.meridiancc.edu/",
+    },
+    {
+      name: "Mississippi College",
+      image: "./image/misscollege.svg",
+      link: "https://www.mc.edu/",
+    },
+    {
+      name: "Jackson State University",
+      image: "./image/jsu.svg",
+      link: "https://www.jsums.edu/",
+    },
+    {
+      name: "University of Southern Mississippi",
+      image: "./image/usm.svg",
+      link: "https://www.usm.edu/",
+    },
+    {
+      name: "Arizona State University",
+      image: "./image/asu.svg",
+      link: "https://www.asu.edu/",
+    },
+    {
+      name: "Maryland Institute College of Art",
+      image: "./image/mica.svg",
+      link: "https://www.mica.edu/",
+    },
   ];
   return (
     <div className="bg-[#420020] py-4">

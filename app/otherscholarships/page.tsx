@@ -1,5 +1,5 @@
 "use client";
-import { Button, Link } from "@nextui-org/react";
+import { Link } from "@nextui-org/react";
 import { Fragment } from "react";
 
 export default function Page() {
@@ -25,7 +25,7 @@ export default function Page() {
     {
       name: "Internships at the Indian Arts Research Center",
       description:
-        "The Indian Arts Research Center (IARC) offers three internships annually to Native American, Alaska Native, Native Hawaiian, and First Nations students who are enrolled in undergraduate or graduate programs. Interns work closely with IARC staff and undertake collections-based projects, such as researching the collection, working with artists, developing educational resources, or assisting with an exhibition. Past interns have cataloged the collection, digitized photographs, served as liaison to artists, and conducted research for exhibitions, among other projects. The internships are intended to provide students with opportunities to gain hands-on experience in a museum setting, learn about museum practices, enhance their research skills, and refine career goals. Interns receive a stipend of $600 per week, housing, and travel reimbursement.",
+        "The Indian Arts Research Center (IARC) offers three internships annually to Native American, Alaska Native, Native Hawaiian, and First Nations students who are enrolled in undergraduate or graduate programs. Interns work closely with IARC staff and undertake collections-based projects, such as researching the collection, working with artists, developing educational resources, or assisting with an exhibition. Past interns have cataloged the collection, digitized photographs, served as liaison to artists, and conducted research for exhibitions, among other projects. The internships are intended to provide students with opportunities to gain hands-on experience in a museum setting, learn about museum practices, enhance their research skills, and refine career goals.",
       url: "https://sarweb.org/iarc/internships/",
     },
     {
@@ -46,14 +46,14 @@ export default function Page() {
           financial support. While there is still a shortage of programs, our
           team at BestColleges.com created a page that highlights several Native
           American scholarships available to support these underserved students.
-          You can view it below:{" "}
+          You can view it here:{" "}
           <Link
             isExternal
-            href="https://college.harvard.edu/financial-aid"
+            href="https://www.bestcolleges.com/financial-aid/native-american-scholarships/"
             color="primary"
             size="md"
           >
-            https://college.harvard.edu/financial-aid
+            https://www.bestcolleges.com/financial-aid/native-american-scholarships/
           </Link>
         </p>
         {scholarships.map((scholarship) => (
