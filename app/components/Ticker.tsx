@@ -72,7 +72,7 @@ export default function CollegeTicker() {
       <h1 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
         Recent Graduates From:
       </h1>
-      <Marquee>
+      <Marquee autoFill>
         {colleges.map((item, index) => (
           <a href={item.link} target="_blank">
             <Image
@@ -83,6 +83,7 @@ export default function CollegeTicker() {
               height={200}
               width={200}
               className="m-6 scale-100 px-4 transition duration-300 ease-in-out hover:scale-110"
+              loading="eager"
             />
           </a>
         ))}
