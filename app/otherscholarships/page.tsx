@@ -34,7 +34,48 @@ export default function Page() {
         "The 4A Foundation is a nonprofit organization that provides scholarships to multicultural students pursuing a career in advertising. The 4A Foundation offers several scholarships, including the 4A Foundation Multicultural Advertising Intern Program (MAIP) Scholarship, the 4A Foundation Scholars Program, and the 4A Foundation Carolinas Scholarship. The MAIP Scholarship is open to students who have completed their junior year of college and are interested in pursuing a career in advertising. The 4A Foundation Scholars Program is open to students who have completed their sophomore year of college and are interested in pursuing a career in advertising. The 4A Foundation also offers a scholarship for students pursuing a master's degree in advertising.",
       url: "https://foundation.aaaa.org/scholarshipsawards.html",
     },
-    {},
+    {
+      name: "Actuarial Foundation Diversity Scholarship",
+      description:
+        "The Actuarial Foundation offers a scholarship for minority students pursuing a career in actuarial science. The scholarship is open to full-time undergraduate students who are enrolled in a degree program that may lead to a career in the actuarial profession. Applicants must be a member of an underrepresented minority group, including Black/African American, Hispanic, Native North American, or Pacific Islander.",
+      url: "https://actuarialfoundation.org/scholarships/actuarial-diversity-scholarship/",
+    },
+    {
+      name: "American Chemistry Society Scholars Program",
+      description:
+        "The ACS Scholars Program awards renewable scholarships to undergraduate students from historically underrepresented groups in the chemical sciences, majoring in chemistry-related disciplines, and intending to pursue chemistry-related careers. Selected recipients are awarded up to $5,000 per academic year. To date, over 3,500 students have received funding from the ACS Scholars Program.",
+      url: "https://www.acs.org/education/acs-scholars.html",
+    },
+    {
+      name: "AISES (American Indian Science and Engineering Society)",
+      description:
+        "AISES helps students move forward in their educational journeys by providing a wide range of programs and scholarship opportunities. AISES scholarships help students acquire skills and training that will help them meet the unique STEM needs of our communities. AISES scholarships range from $500 to $10,000 and include funding for tuition, books, and academic fees. To be eligible for an AISES scholarship, you must be pursuing a degree in one of the following fields: computer science, engineering, engineering technology, geology, mathematics, natural resources, physical science, or science.",
+      url: "https://www.aises.org/students/scholarships",
+    },
+    {
+      name: "American Indian College Fund",
+      description:
+        "The American Indian College Fund provides scholarships to American Indian and Alaska Native college students seeking undergraduate and graduate degrees at tribal colleges, nonprofit, and accredited schools. The American Indian College Fund also provides scholarships to students attending any other accredited public and non-profit private college all across the United States. The American Indian College Fund also provides scholarships to students attending any other accredited public and non-profit private college all across the United States.",
+      url: "https://collegefund.org/students/scholarship-journey/",
+    },
+    {
+      name: "American Indian Education Foundation",
+      description:
+        "The American Indian Education Foundation (AIEF) provides scholarships to American Indian and Alaska Native undergraduate and graduate students attending tribal colleges and public or private nonprofit colleges across the United States. The AIEF also provides scholarships to students attending any other accredited public and non-profit private college all across the United States.",
+      url: "http://www.nativepartnership.org/site/PageServer?pagename=aief_services_scholarships",
+    },
+    {
+      name: "Native Forward Scholarship Fund",
+      description:
+        "The Native Forward Scholarship Fund is a scholarship program that provides financial support to Native American students pursuing higher education. The scholarship is open to Native American students who are enrolled in a tribe from the continental United States or Alaska. Applicants must be enrolled in an accredited college or university and have a minimum GPA of 2.5. The scholarship is open to students pursuing any degree program, including STEM, business, law, and medicine. The scholarship is open to students pursuing any degree program, including STEM, business, law, and medicine.",
+      url: "https://www.nativeforward.org",
+    },
+    {
+      name: "American Indian Services",
+      description:
+        "American Indian Services (AIS) is a nonprofit organization that provides scholarships to Native American students pursuing higher education. AIS offers scholarships for undergraduate and graduate students attending tribal colleges and public or private nonprofit colleges across the United States. AIS also provides scholarships to students attending any other accredited public and non-profit private college all across the United States.",
+      url: "https://www.americanindianservices.org/scholarships",
+    },
   ];
   return (
     <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
@@ -56,18 +97,25 @@ export default function Page() {
             https://www.bestcolleges.com/financial-aid/native-american-scholarships/
           </Link>
         </p>
-        {scholarships.map((scholarship) => (
-          <Fragment key={scholarship.url}>
-            <hr />
-            <h3>{scholarship.name}</h3>
-            <p>{scholarship.description}</p>
-            <p>
-              <Link isExternal href={scholarship.url} color="primary" size="md">
-                {scholarship.url}
-              </Link>
-            </p>
-          </Fragment>
-        ))}
+        {scholarships
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((scholarship) => (
+            <Fragment key={scholarship.url}>
+              <hr />
+              <h3>{scholarship.name}</h3>
+              <p>{scholarship.description}</p>
+              <p>
+                <Link
+                  isExternal
+                  href={scholarship.url}
+                  color="primary"
+                  size="md"
+                >
+                  {scholarship.url}
+                </Link>
+              </p>
+            </Fragment>
+          ))}
       </div>
     </section>
   );
