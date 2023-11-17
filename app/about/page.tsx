@@ -1,19 +1,16 @@
-import { Image } from "@nextui-org/react";
+import { Image, Link } from "@nextui-org/react";
 
 export default function Page() {
   return (
     <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
       <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
-        <figure>
-          <Image
-            width={1024}
-            src="./image/tspstaff3.webp"
-            alt="Tribal Scholarship Program Staff"
-            radius="none"
-            shadow="none"
-            loading="lazy"
-          />
-        </figure>
+        <Image
+          width={1024}
+          height={715}
+          src="./image/tspstaff3.webp"
+          alt="Tribal Scholarship Program Staff"
+          isBlurred
+        />
         <p className="lead">About Us</p>
         <p>
           The Mississippi Band of Choctaw Indians has consistently placed
@@ -40,14 +37,14 @@ export default function Page() {
           assist in the application process to the program and also assist
           students in completing the Free Application for Federal Student Aid
           (FAFSA). FAFSA or Pell Grant applications are done online at{" "}
-          <a
+          <Link
+            isExternal
             href="https://www.fafsa.ed.gov"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-rose-500"
+            color="primary"
+            size="md"
           >
             https://www.fafsa.ed.gov
-          </a>
+          </Link>
           . Students should be aware of the Financial Aid Priority deadlines at
           the colleges and universities each year. Some colleges have an April 1
           deadline and will process financial aid requests to those students who

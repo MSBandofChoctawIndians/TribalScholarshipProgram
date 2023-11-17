@@ -38,17 +38,13 @@ export default function Page() {
       <CollegeTicker />
       <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
         <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
-          <figure>
-            <Image
-              width={1024}
-              height={336}
-              src="./image/tspstaff2.webp"
-              alt="Tribal Scholarship Program Staff"
-              radius="none"
-              shadow="none"
-              loading="lazy"
-            />
-          </figure>
+          <Image
+            width={1024}
+            height={336}
+            src="./image/tspstaff2.webp"
+            alt="Tribal Scholarship Program Staff"
+            isBlurred
+          />
           <p className="lead">
             Halito! Welcome to the Tribal Scholarship Program!
           </p>

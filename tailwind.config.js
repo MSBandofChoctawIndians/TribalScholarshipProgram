@@ -19,11 +19,7 @@ const config = {
         dark: {
           colors: {
             primary: {
-              DEFAULT: "#4c0519",
-              foreground: "#FFFFFF",
-            },
-            warning: {
-              DEFAULT: "#F43F5E",
+              DEFAULT: "#73D6E6",
               foreground: "#000000",
             },
             danger: {

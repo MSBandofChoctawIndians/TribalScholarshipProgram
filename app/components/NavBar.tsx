@@ -59,7 +59,7 @@ export default function NavBar() {
         {navLinks.map((link, index) => (
           <NavbarItem key={`${link}-${index}`}>
             <Link
-              color={`${pathname === link.path ? "warning" : "foreground"}`}
+              color={`${pathname === link.path ? "primary" : "foreground"}`}
               href={link.path}
               as={NextLink}
             >

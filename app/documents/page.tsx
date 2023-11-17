@@ -1,4 +1,5 @@
 "use client";
+import { Button, Link } from "@nextui-org/react";
 import { Fragment } from "react";
 
 export default function Page() {
@@ -82,18 +83,20 @@ export default function Page() {
       <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
         <p className="lead">Documents</p>
         <p>Please click the links below to download the documents.</p>
-        <ul className="list-inside list-disc">
+        <ul className="list-outside list-none">
           {documents.map((document) => (
             <Fragment key={document.url}>
               <li>
-                <a
+                <Button
                   href={document.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-rose-500 hover:underline"
+                  as={Link}
+                  color="danger"
+                  showAnchorIcon
+                  variant="solid"
+                  size="lg"
                 >
                   {document.name}
-                </a>
+                </Button>
               </li>
             </Fragment>
           ))}

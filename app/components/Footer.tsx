@@ -1,8 +1,8 @@
-import { Image } from "@nextui-org/react";
+import { Image, Link } from "@nextui-org/react";
 
 export default function Footer() {
   return (
-    <footer className="mt-8 bg-rose-950 py-4 text-white">
+    <footer className="mt-8 bg-[#420020] py-4 text-white">
       <div className="mx-auto flex max-w-[1024px] flex-col items-center justify-between lg:flex-row">
         <div className="item-center mb-4 flex gap-4 md:mb-0">
           <Image
@@ -20,19 +20,17 @@ export default function Footer() {
         </div>
         <p className="text-md text-center lg:text-right">
           This page is maintained by the{" "}
-          <a
+          <Link
             href="https://www.choctaw.org/media/index.html"
-            className="whitespace-nowrap text-rose-500"
+            isExternal
+            color="primary"
           >
             Office of Public Information
-          </a>
+          </Link>
           . Copyright &copy; {new Date().getFullYear()}.{" "}
-          <a
-            href="https://www.choctaw.org"
-            className="whitespace-nowrap text-rose-500"
-          >
+          <Link href="https://www.choctaw.org" isExternal color="primary">
             Mississippi Band of Choctaw Indians
-          </a>
+          </Link>
           . All rights reserved.
         </p>
       </div>
