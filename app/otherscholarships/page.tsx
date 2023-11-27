@@ -1,5 +1,5 @@
 "use client";
-import { Link } from "@nextui-org/react";
+import { Button, Link } from "@nextui-org/react";
 import { Fragment } from "react";
 
 export default function Page() {
@@ -76,6 +76,12 @@ export default function Page() {
         "American Indian Services (AIS) is a nonprofit organization that provides scholarships to Native American students pursuing higher education. AIS offers scholarships for undergraduate and graduate students attending tribal colleges and public or private nonprofit colleges across the United States. AIS also provides scholarships to students attending any other accredited public and non-profit private college all across the United States.",
       url: "https://www.americanindianservices.org/scholarships",
     },
+    {
+      name: "American Nuclear Society",
+      description:
+        "The American Nuclear Society offers a variety of scholarships for students pursuing a degree in nuclear science, nuclear engineering, or a nuclear-related field. The scholarships are open to undergraduate and graduate students. The American Nuclear Society also offers scholarships for high school students who are interested in pursuing a degree in nuclear science, nuclear engineering, or a nuclear-related field.",
+      url: "https://www.ans.org/scholarships/",
+    },
   ];
   return (
     <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
@@ -104,7 +110,18 @@ export default function Page() {
               <hr />
               <h3>{scholarship.name}</h3>
               <p>{scholarship.description}</p>
-              <p>
+              <Button
+                href={scholarship.url}
+                as={Link}
+                color="danger"
+                showAnchorIcon
+                variant="solid"
+                size="lg"
+                isExternal
+              >
+                {scholarship.url}
+              </Button>
+              {/* <p>
                 <Link
                   isExternal
                   href={scholarship.url}
@@ -113,7 +130,7 @@ export default function Page() {
                 >
                   {scholarship.url}
                 </Link>
-              </p>
+              </p> */}
             </Fragment>
           ))}
       </div>

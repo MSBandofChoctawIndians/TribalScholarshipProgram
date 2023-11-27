@@ -1,9 +1,11 @@
 import { Image, Link } from "@nextui-org/react";
+import ContactForm from "./Contact";
 
 export default function Footer() {
   return (
     <footer className="mt-8 bg-[#420020] py-4 text-white">
       <div className="mx-auto flex max-w-[1024px] flex-col items-center justify-between lg:flex-row">
+        <ContactForm />
         <div className="item-center mb-4 flex gap-4 md:mb-0">
           <Image
             src="./image/TSPlogo.webp"

@@ -17,15 +17,15 @@
 
 This website is the landing page for the Tribal Scholarship Program for the Mississippi Band of Choctaw Indians.
 
-## Features
+## Components
 
 ### Video Background
 
-Videos are stored in `public/video/...`. In order to modify the playlist, you'll need to add the video URL to the `videos` array in `app/components/VideoBackground.tsx` then run `npm run deploy` in terminal.
+Videos are stored in `public/video/`. In order to modify the playlist, you'll need to add the video URL to the `videos` array in `app/components/VideoBackground.tsx` then run `npm run deploy` in terminal.
 
 ### Ticker
 
-Institution logos (SVG or PNG) are stored in `public/image/...`. In order to modify the ticker, you'll need to add the image name, image url, and cooresponding website to the `colleges` array in `public/components/Ticker.tsx` then run `npm run deploy` in terminal.
+Institution logos (SVG or PNG) are stored in `public/image/`. In order to modify the ticker, you'll need to add the image name, image url, and cooresponding website to the `colleges` array in `public/components/Ticker.tsx` then run `npm run deploy` in terminal.
 
 ## Authors
 
