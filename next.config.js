@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: '/TribalScholarshipProgram',
-}
+  output: "export",
+  basePath: "/TribalScholarshipProgram",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

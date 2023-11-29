@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Image } from "@nextui-org/react";
 import CollegeTicker from "./components/Ticker";
 import VideoBackground from "./components/VideoBackground";
+import ContactForm from "./components/ContactSection";
 
 export const metadata: Metadata = {
   title: "Home | Tribal Scholarship Program",
@@ -45,10 +46,8 @@ export default function Page() {
             alt="Tribal Scholarship Program Staff"
             isBlurred
           />
+          <h2>Halito! Welcome to the Tribal Scholarship Program!</h2>
           <p className="lead">
-            Halito! Welcome to the Tribal Scholarship Program!
-          </p>
-          <p>
             The Scholarship Program pledges to provide high-quality, pre-college
             counseling by: helping students explore majors and assisting with
             admission, housing and financial aid applications and the
@@ -88,6 +87,7 @@ export default function Page() {
           </p>
         </div>
       </section>
+      <ContactForm />
     </>
   );
 }

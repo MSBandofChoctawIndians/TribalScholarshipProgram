@@ -1,25 +1,17 @@
 "use client";
-import React, { useState, useRef } from "react";
+import { useState } from "react";
 import { Button, Input, Textarea } from "@nextui-org/react";
-import ReCAPTCHA from "react-google-recaptcha";
-
-// @ts-ignore
-function onChange(value) {
-  console.log("Captcha value:", value);
-}
 
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [formStatus, setFormStatus] = useState("");
-  const recaptchaRef = useRef();
+  const [isSubmitted, setIsSubmitted] = useState(false); // add a new state variable
 
   // @ts-ignore
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // @ts-ignore
-    const recaptchaValue = recaptchaRef.current.getValue();
 
     // Send a POST request to the Power Automate URL
     const response = await fetch(
@@ -29,12 +21,13 @@ const ContactForm = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, message, recaptchaValue }),
+        body: JSON.stringify({ name, email, message }),
       },
     );
 
     if (response.ok) {
       setFormStatus("Form submitted successfully!");
+      setIsSubmitted(true); // set the isSubmitted state variable to true
     } else {
       setFormStatus("Error submitting form");
     }
@@ -45,7 +38,9 @@ const ContactForm = () => {
     setMessage("");
   };
 
-  return (
+  return isSubmitted ? (
+    <p>{formStatus}</p>
+  ) : (
     <form onSubmit={handleSubmit} className="mx-auto max-w-md">
       <Input
         label="Name"
@@ -69,16 +64,9 @@ const ContactForm = () => {
         required
         className="mb-4"
       />
-      <ReCAPTCHA
-        // @ts-ignore
-        ref={recaptchaRef}
-        sitekey="6LeuWB4pAAAAAPZ3zTfE8MWVRdjCQoQM1e7MdNvO"
-        onChange={onChange}
-      />
       <Button type="submit" className="w-full">
         Submit
       </Button>
-      {formStatus && <p>{formStatus}</p>}
     </form>
   );
 };

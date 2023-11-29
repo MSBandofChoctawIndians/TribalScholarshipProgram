@@ -11,7 +11,7 @@ export default function Page() {
           alt="Tribal Scholarship Program Staff"
           isBlurred
         />
-        <p className="lead">About Us</p>
+        <h1>About Us</h1>
         <p>
           The Mississippi Band of Choctaw Indians has consistently placed
           education as a high priority and emphasized the importance of

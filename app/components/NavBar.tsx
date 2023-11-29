@@ -71,7 +71,7 @@ export default function NavBar() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="danger" href="#" variant="solid">
+          <Button as={Link} color="danger" href="#">
             Apply Now
           </Button>
         </NavbarItem>
