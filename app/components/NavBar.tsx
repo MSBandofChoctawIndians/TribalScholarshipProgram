@@ -86,6 +86,7 @@ export default function NavBar() {
               href={link.path}
               as={NextLink}
               size="lg"
+              onClick={() => setIsMenuOpen(false)}
             >
               {link.name}
             </Link>

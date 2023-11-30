@@ -86,7 +86,7 @@ export default function Page() {
   return (
     <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
       <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
-        <p className="lead">Other Scholarships</p>
+        <h1>Other Scholarships</h1>
         <p>
           According to Poverty USA, Indigenous Americans experience the highest
           poverty rates among all ethnic groups, highlighting the great need for

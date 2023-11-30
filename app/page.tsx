@@ -37,7 +37,8 @@ export default function Page() {
     <>
       <VideoBackground />
       <CollegeTicker />
-      <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
+      <div className="absolute inset-0 bg-[url(/TribalScholarshipProgram/image/tiles.jpg)] bg-top"></div>
+      <section className="bg-tile mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
         <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
           <Image
             width={1024}
@@ -86,8 +87,8 @@ export default function Page() {
             to receiving funding through the Tribal Scholarship Program.
           </p>
         </div>
+        <ContactForm />
       </section>
-      <ContactForm />
     </>
   );
 }
