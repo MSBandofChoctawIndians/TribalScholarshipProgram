@@ -3,6 +3,15 @@
 @import "tailwindcss/utilities";
 
 .bg-tile {
-  background-image: url("/TribalScholarshipProgram/image/tiles.jpg");
+  background-image: linear-gradient(
+      to right,
+      transparent,
+      black,
+      black,
+      black,
+      transparent
+    ),
+    url("/TribalScholarshipProgram/image/weave02.svg");
   background-repeat: repeat;
+  background-position: top center;
 }

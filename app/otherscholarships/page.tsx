@@ -84,44 +84,44 @@ export default function Page() {
     },
   ];
   return (
-    <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
-      <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
-        <h1>Other Scholarships</h1>
-        <p>
-          According to Poverty USA, Indigenous Americans experience the highest
-          poverty rates among all ethnic groups, highlighting the great need for
-          financial support. While there is still a shortage of programs, our
-          team at BestColleges.com created a page that highlights several Native
-          American scholarships available to support these underserved students.
-          You can view it here:{" "}
-          <Link
-            isExternal
-            href="https://www.bestcolleges.com/financial-aid/native-american-scholarships/"
-            color="primary"
-            size="md"
-          >
-            https://www.bestcolleges.com/financial-aid/native-american-scholarships/
-          </Link>
-        </p>
-        {scholarships
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .map((scholarship) => (
-            <Fragment key={scholarship.url}>
-              <hr />
-              <h3>{scholarship.name}</h3>
-              <p>{scholarship.description}</p>
-              <Button
-                href={scholarship.url}
-                as={Link}
-                color="danger"
-                showAnchorIcon
-                variant="solid"
-                size="lg"
-                isExternal
-              >
-                {scholarship.url}
-              </Button>
-              {/* <p>
+    <section className="bg-tile top-[-40px]">
+      <div className="top-4 mx-auto max-w-[1024px] bg-black px-4 pb-4 sm:px-6 lg:px-2">
+        <div className="prose prose-slate mx-auto max-w-none pt-4 dark:prose-invert md:prose-lg lg:prose-xl">
+          <h1>Other Scholarships</h1>
+          <p>
+            According to Poverty USA, Indigenous Americans experience the
+            highest poverty rates among all ethnic groups, highlighting the
+            great need for financial support. While there is still a shortage of
+            programs, our team at BestColleges.com created a page that
+            highlights several Native American scholarships available to support
+            these underserved students. You can view it here:{" "}
+            <Link
+              isExternal
+              href="https://www.bestcolleges.com/financial-aid/native-american-scholarships/"
+              color="primary"
+              size="md"
+            >
+              https://www.bestcolleges.com/financial-aid/native-american-scholarships/
+            </Link>
+          </p>
+          {scholarships
+            .sort((a, b) => a.name.localeCompare(b.name))
+            .map((scholarship) => (
+              <Fragment key={scholarship.url}>
+                <hr />
+                <h3>{scholarship.name}</h3>
+                <p>{scholarship.description}</p>
+                <Button
+                  href={scholarship.url}
+                  as={Link}
+                  color="danger"
+                  showAnchorIcon
+                  size="lg"
+                  isExternal
+                >
+                  Read More
+                </Button>
+                {/* <p>
                 <Link
                   isExternal
                   href={scholarship.url}
@@ -131,8 +131,9 @@ export default function Page() {
                   {scholarship.url}
                 </Link>
               </p> */}
-            </Fragment>
-          ))}
+              </Fragment>
+            ))}
+        </div>
       </div>
     </section>
   );

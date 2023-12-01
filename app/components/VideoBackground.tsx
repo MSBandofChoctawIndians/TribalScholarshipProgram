@@ -7,15 +7,15 @@ const VideoBackground = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const videos = [
-    "./video/Ashlynn_Willis.mp4",
-    "./video/Candice_York.mp4",
-    "./video/Deona_Allen.mp4",
-    "./video/Jade_Willis.mp4",
-    "./video/Kelli_Jones.mp4",
-    "./video/Latricia_Johnson.mp4",
-    "./video/Miriam_Curry.mp4",
-    "./video/Stephanie_Langford.mp4",
-    "./video/Tashina_Taylor.mp4",
+    "./video/Ashlynn_Willis.mp4?v=1",
+    "./video/Candice_York.mp4?v=1",
+    "./video/Deona_Allen.mp4?v=1",
+    "./video/Jade_Willis.mp4?v=1",
+    "./video/Kelli_Jones.mp4?v=1",
+    "./video/Latricia_Johnson.mp4?v=1",
+    "./video/Miriam_Curry.mp4?v=1",
+    "./video/Stephanie_Langford.mp4?v=1",
+    "./video/Tashina_Taylor.mp4?v=1",
   ];
 
   useEffect(() => {
@@ -39,9 +39,9 @@ const VideoBackground = () => {
       <div className="relative z-30 mb-5 flex max-w-[1024px] flex-col items-center justify-between self-end rounded-md bg-black bg-opacity-50 p-5 md:flex-row">
         <div className="mb-10 flex items-center md:mb-0">
           <Image
-            src="./image/TSPlogo.webp"
-            width={737}
-            height={737}
+            src="./image/TSPlogo01.webp"
+            width={160}
+            height={160}
             alt="Logo"
             className="h-40 w-auto"
           />

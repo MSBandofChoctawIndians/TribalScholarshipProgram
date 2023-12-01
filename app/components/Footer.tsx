@@ -2,11 +2,11 @@ import { Image, Link } from "@nextui-org/react";
 
 export default function Footer() {
   return (
-    <footer className="mt-8 bg-[#420020] py-4 text-white">
+    <footer className="bg-[#420020] py-4 text-white">
       <div className="mx-auto flex max-w-[1024px] flex-col items-center justify-between lg:flex-row">
         <div className="item-center mb-4 flex gap-4 md:mb-0">
           <Image
-            src="./image/TSPlogo.webp"
+            src="./image/TSPlogo01.webp"
             alt="Tribal Scholarship Program"
             width={160}
             height={160}
@@ -24,11 +24,17 @@ export default function Footer() {
             href="https://www.choctaw.org/media/index.html"
             isExternal
             color="primary"
+            showAnchorIcon
           >
             Office of Public Information
           </Link>
           . Copyright &copy; {new Date().getFullYear()}.{" "}
-          <Link href="https://www.choctaw.org" isExternal color="primary">
+          <Link
+            href="https://www.choctaw.org"
+            isExternal
+            color="primary"
+            showAnchorIcon
+          >
             Mississippi Band of Choctaw Indians
           </Link>
           . All rights reserved.

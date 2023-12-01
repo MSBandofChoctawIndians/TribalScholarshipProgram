@@ -71,7 +71,12 @@ export default function NavBar() {
 
       <NavbarContent justify="end">
         <NavbarItem>
-          <Button as={Link} color="danger" href="#">
+          <Button
+            as={Link}
+            color="danger"
+            href="https://tribalscholarshipprogram.secure-platform.com/site"
+            isExternal
+          >
             Apply Now
           </Button>
         </NavbarItem>

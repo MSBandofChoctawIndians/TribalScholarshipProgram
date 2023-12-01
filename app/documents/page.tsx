@@ -79,28 +79,30 @@ export default function Page() {
   ];
 
   return (
-    <section className="mx-auto mt-8 max-w-[1024px] px-4 sm:px-6 lg:px-0">
-      <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
-        <h1>Documents</h1>
-        <p>Please click the links below to download the documents.</p>
-        <ul className="list-outside list-none">
-          {documents.map((document) => (
-            <Fragment key={document.url}>
-              <li>
-                <Button
-                  href={document.url}
-                  as={Link}
-                  color="danger"
-                  showAnchorIcon
-                  variant="solid"
-                  size="lg"
-                >
-                  {document.name}
-                </Button>
-              </li>
-            </Fragment>
-          ))}
-        </ul>
+    <section className="bg-tile top-[-40px]">
+      <div className="top-4 mx-auto max-w-[1024px] bg-black px-4 pb-4 sm:px-6 lg:px-2">
+        <div className="prose prose-slate mx-auto max-w-none pt-4 dark:prose-invert md:prose-lg lg:prose-xl">
+          <h1>Documents</h1>
+          <p>Please click the links below to download the documents.</p>
+          <ul className="list-outside list-none">
+            {documents.map((document) => (
+              <Fragment key={document.url}>
+                <li>
+                  <Button
+                    href={document.url}
+                    as={Link}
+                    color="danger"
+                    showAnchorIcon
+                    variant="solid"
+                    size="lg"
+                  >
+                    {document.name}
+                  </Button>
+                </li>
+              </Fragment>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );
