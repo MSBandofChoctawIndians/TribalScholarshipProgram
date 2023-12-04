@@ -77,7 +77,7 @@ const ContactForm = () => {
         <h2 className="text-center">Contact Us</h2>
         <p className="lead text-center">Please complete the following form:</p>
       </div>
-      <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form onSubmit={handleSubmit} className="mx-auto mt-8 max-w-xl sm:mt-10">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <Input

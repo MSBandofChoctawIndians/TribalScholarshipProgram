@@ -2,7 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.bg-tile {
+/* .bg-tile {
   background-image: linear-gradient(
       to right,
       transparent,
@@ -14,4 +14,4 @@
     url("/TribalScholarshipProgram/image/weave02.svg");
   background-repeat: repeat;
   background-position: top center;
-}
+} */

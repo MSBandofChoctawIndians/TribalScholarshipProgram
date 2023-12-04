@@ -9,7 +9,11 @@ const config = {
     "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        tile: "linear-gradient(to right, transparent, black, black, black, transparent), url('/TribalScholarshipProgram/image/weave02.svg')",
+      },
+    },
   },
   darkMode: "class",
   plugins: [
