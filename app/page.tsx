@@ -3,7 +3,7 @@ import { Image } from "@nextui-org/react";
 import CollegeTicker from "./components/Ticker";
 import VideoBackground from "./components/VideoBackground";
 import ContactForm from "./components/ContactSection";
-import StoleModal from "./components/Modal";
+import Statistics from "./components/Statistics";
 
 export const metadata: Metadata = {
   title: "Home | Tribal Scholarship Program",
@@ -38,8 +38,9 @@ export default function Page() {
     <>
       <VideoBackground />
       <CollegeTicker />
-      <section className="bg-tile top-[-40px] bg-top bg-repeat">
+      <section className="top-[-40px] bg-tile bg-top bg-repeat">
         <div className="top-4 mx-auto max-w-[1024px] bg-black px-4 pb-4 sm:px-6 lg:px-2">
+          <Statistics />
           <div className="prose prose-slate mx-auto max-w-none pt-4 dark:prose-invert md:prose-lg lg:prose-xl">
             <Image
               width={1024}
@@ -50,7 +51,6 @@ export default function Page() {
               isBlurred
             />
             <h2>Halito! Welcome to the Tribal Scholarship Program!</h2>
-            <StoleModal />
             <p className="lead">
               The Scholarship Program pledges to provide high-quality,
               pre-college counseling by: helping students explore majors and

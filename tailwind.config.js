@@ -30,6 +30,10 @@ const config = {
               DEFAULT: "#660032",
               foreground: "#FFFFFF",
             },
+            success: {
+              DEFAULT: "#74D7E7",
+              foreground: "#000000",
+            },
             focus: "#660032",
           },
         },
