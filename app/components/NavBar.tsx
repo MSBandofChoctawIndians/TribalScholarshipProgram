@@ -11,10 +11,10 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Button,
+  Image,
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
 import NextLink from "next/link";
-import { TSPLogo } from "./TSPLogo.jsx";
 
 export default function NavBar() {
   const navLinks = [
@@ -59,7 +59,7 @@ export default function NavBar() {
       <NavbarContent className="pr-3 md:hidden" justify="center">
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
-            <TSPLogo />
+            <Image src="./image/tsplogo.svg" width={36} height={18.5} />
             <p className="font-bold text-inherit">TSP</p>
           </NavbarBrand>
         </Link>
@@ -68,7 +68,7 @@ export default function NavBar() {
       <NavbarContent className="hidden gap-4 md:flex" justify="center">
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
-            <TSPLogo />
+            <Image src="./image/tsplogo.svg" width={36} height={18.5} />
             <p className="pl-2 font-bold text-inherit">TRIBAL SCHOLARSHIP</p>
           </NavbarBrand>
         </Link>

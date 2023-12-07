@@ -40,17 +40,10 @@ export default function Page() {
       <CollegeTicker />
       <section className="top-[-40px] bg-tile bg-top bg-repeat">
         <div className="top-4 mx-auto max-w-[1024px] bg-black px-4 pb-4 sm:px-6 lg:px-2">
-          <Statistics />
           <div className="prose prose-slate mx-auto max-w-none pt-4 dark:prose-invert md:prose-lg lg:prose-xl">
-            <Image
-              width={1024}
-              height={336}
-              src="./image/tspstaff2.webp"
-              alt="Tribal Scholarship Program Staff"
-              className="!mt-0"
-              isBlurred
-            />
-            <h2>Halito! Welcome to the Tribal Scholarship Program!</h2>
+            <h1 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
+              Tribal Scholarship Program
+            </h1>
             <p className="lead">
               The Scholarship Program pledges to provide high-quality,
               pre-college counseling by: helping students explore majors and
@@ -61,36 +54,8 @@ export default function Page() {
               Cost of Attendance from each college or university to set the
               scholarship award amount for each individual student.
             </p>
-            <p>
-              The primary objective of the Tribal Scholarship Program is to
-              provide to eligible members of the Mississippi Band of Choctaw
-              Indians who are committed to furthering their post-secondary
-              education the best possible financial aid package for each
-              student. The program also counsels and assists tribal members in
-              structuring their educational endeavors and serves as a student's
-              advocate at the post-secondary educational institution when
-              necessary.
-            </p>
-            <p>
-              Although most applicants seek financial assistance, this program
-              provides a variety of post-secondary educational services. The
-              scholarship is not need-based; however, students must complete the
-              financial aid application process at the college to document
-              expenses, resources and other financial aid that provide a basis
-              for scholarship awards. This process includes completing the Free
-              Application for Federal Student Aid. Applicants seeking financial
-              assistance must be an enrolled member of the Mississippi Band of
-              Choctaw Indians.
-            </p>
-            <p>
-              Scholarship assistance is available at the bachelor, master and
-              doctorate level, as well as technical degrees and a limited number
-              of vocational programs of study. Students wishing to enter a
-              technical or vocational program must file an application with the
-              Vocational Education Program and Employment Assistance Program
-              prior to receiving funding through the Tribal Scholarship Program.
-            </p>
           </div>
+          <Statistics />
           <ContactForm />
         </div>
       </section>

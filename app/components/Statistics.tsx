@@ -9,7 +9,7 @@ export default function Statistics() {
       increase: 74,
     },
     {
-      label: "New Tribal Member Recipients",
+      label: "New Recipients",
       icon: "student",
       number: 119,
     },
@@ -123,9 +123,9 @@ export default function Statistics() {
   return (
     <>
       <div className="py-4">
-        <h1 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
+        <h2 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
           Currently Funding
-        </h1>
+        </h2>
         <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {CurrentFunding.map((item, index) => (
             <StatCard
@@ -139,9 +139,9 @@ export default function Statistics() {
         </dl>
       </div>
       <div className="py-4">
-        <h1 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
+        <h2 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
           Student Awarded Diplomas
-        </h1>
+        </h2>
         <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {StudentDiplomas.map((item, index) => (
             <StatCard
@@ -155,9 +155,9 @@ export default function Statistics() {
         </dl>
       </div>
       <div className="py-4">
-        <h1 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
+        <h2 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
           Student Athletes
-        </h1>
+        </h2>
         <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {StudentAthletes.map((item, index) => (
             <StatCard
