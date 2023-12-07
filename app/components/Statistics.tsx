@@ -1,3 +1,5 @@
+import StatCard from "./StatCard";
+
 export default function Statistics() {
   const CurrentFunding = [
     {
@@ -28,25 +30,25 @@ export default function Statistics() {
       increase: 30,
     },
     {
-      label: "Students @ 4 Year Institutions",
+      label: "4 Year Institutions",
       icon: "student",
       number: 214,
       increase: 28,
     },
     {
-      label: "Students @ 2 Year Institutions",
+      label: "2 Year Institutions",
       icon: "student",
       number: 198,
       increase: 44,
     },
     {
-      label: "Students @ Graduate School",
+      label: "Graduate School",
       icon: "student",
       number: 64,
       increase: 14,
     },
     {
-      label: "Students @ Doctoral School",
+      label: "Doctoral School",
       icon: "student",
       number: 9,
       increase: 6,
@@ -61,22 +63,60 @@ export default function Statistics() {
       increase: 20,
     },
     {
-      label: "Associates",
+      label: "Associates Degree",
       icon: "student",
       number: 16,
       increase: 2,
     },
     {
-      label: "Bachelors",
+      label: "Bachelors Degree",
       icon: "student",
       number: 19,
       increase: 4,
     },
     {
-      label: "Masters",
+      label: "Masters Degree",
       icon: "student",
       number: 6,
       increase: 4,
+    },
+  ];
+
+  const StudentAthletes = [
+    {
+      label: "Basketball",
+      icon: "student",
+      number: 16,
+    },
+    {
+      label: "Softball",
+      icon: "student",
+      number: 6,
+    },
+    {
+      label: "Cross Country / Track",
+      icon: "student",
+      number: 5,
+    },
+    {
+      label: "Football",
+      icon: "student",
+      number: 5,
+    },
+    {
+      label: "Baseball",
+      icon: "student",
+      number: 4,
+    },
+    {
+      label: "Soccer",
+      icon: "student",
+      number: 2,
+    },
+    {
+      label: "Cheerleading",
+      icon: "student",
+      number: 1,
     },
   ];
 
@@ -84,99 +124,49 @@ export default function Statistics() {
     <>
       <div className="py-4">
         <h1 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
-          Currently Funding:
+          Currently Funding
         </h1>
         <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {CurrentFunding.map((item, index) => (
-            <div
+            <StatCard
               key={index}
-              className="overflow-hidden rounded-lg border-2 border-danger bg-black px-4 pt-5 shadow sm:px-6 sm:pt-6"
-            >
-              <dt>
-                <div className="absolute rounded-md bg-danger p-3">
-                  <img
-                    className="h-6 w-6"
-                    src={`./image/icon/${item.icon}.svg`}
-                  />
-                </div>
-                <p className="ml-16 truncate text-sm font-medium text-gray-200">
-                  {item.label}
-                </p>
-              </dt>
-              <dd className="ml-16 flex items-baseline pb-6 sm:pb-7">
-                <p className="text-2xl text-white">{item.number}</p>
-                <p className="ml-2 flex items-baseline text-sm font-semibold text-green-600">
-                  {item.increase && (
-                    <>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                        className="h-5 w-5 shrink-0 self-center text-green-600"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">Increased by</span>
-                      {item.increase}
-                    </>
-                  )}
-                </p>
-              </dd>
-            </div>
+              label={item.label}
+              icon={item.icon}
+              number={item.number}
+              increase={item.increase}
+            />
           ))}
         </dl>
       </div>
       <div className="py-4">
         <h1 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
-          Student Awarded Diplomas:
+          Student Awarded Diplomas
         </h1>
         <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {StudentDiplomas.map((item, index) => (
-            <div
+            <StatCard
               key={index}
-              className="overflow-hidden rounded-lg border-2 border-danger bg-black px-4 pt-5 shadow sm:px-6 sm:pt-6"
-            >
-              <dt>
-                <div className="absolute rounded-md bg-danger p-3">
-                  <img
-                    className="h-6 w-6"
-                    src={`./image/icon/${item.icon}.svg`}
-                  />
-                </div>
-                <p className="ml-16 truncate text-sm font-medium text-gray-200">
-                  {item.label}
-                </p>
-              </dt>
-              <dd className="ml-16 flex items-baseline pb-6 sm:pb-7">
-                <p className="text-2xl text-white">{item.number}</p>
-                <p className="ml-2 flex items-baseline text-sm font-semibold text-green-600">
-                  {item.increase && (
-                    <>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 20 20"
-                        fill="currentColor"
-                        aria-hidden="true"
-                        className="h-5 w-5 shrink-0 self-center text-green-600"
-                      >
-                        <path
-                          fillRule="evenodd"
-                          d="M10 17a.75.75 0 01-.75-.75V5.612L5.29 9.77a.75.75 0 01-1.08-1.04l5.25-5.5a.75.75 0 011.08 0l5.25 5.5a.75.75 0 11-1.08 1.04l-3.96-4.158V16.25A.75.75 0 0110 17z"
-                          clipRule="evenodd"
-                        ></path>
-                      </svg>
-                      <span className="sr-only">Increased by</span>
-                      {item.increase}
-                    </>
-                  )}
-                </p>
-              </dd>
-            </div>
+              label={item.label}
+              icon={item.icon}
+              number={item.number}
+              increase={item.increase}
+            />
+          ))}
+        </dl>
+      </div>
+      <div className="py-4">
+        <h1 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
+          Student Athletes
+        </h1>
+        <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {StudentAthletes.map((item, index) => (
+            <StatCard
+              key={index}
+              label={item.label}
+              icon={item.icon}
+              number={item.number}
+              increase={undefined}
+            />
           ))}
         </dl>
       </div>
