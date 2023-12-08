@@ -61,8 +61,9 @@ export default function NavBar() {
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
             <Image
-              src="./image/tsplogo.svg"
+              src={"./image/tsplogo.svg"}
               as={NextImage}
+              alt="Tribal Scholarship Program"
               width={36}
               height={18.5}
             />
@@ -75,8 +76,9 @@ export default function NavBar() {
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
             <Image
-              src="./image/tsplogo.svg"
+              src={"./image/tsplogo.svg"}
               as={NextImage}
+              alt="Tribal Scholarship Program"
               width={36}
               height={18.5}
             />

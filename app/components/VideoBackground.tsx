@@ -40,7 +40,7 @@ const VideoBackground = () => {
       <div className="relative z-30 mb-5 flex max-w-[1024px] flex-col items-center justify-between self-end rounded-md bg-black bg-opacity-50 p-5 md:flex-row">
         <div className="mb-10 flex items-center md:mb-0">
           <Image
-            src="./image/TSPlogo01.webp"
+            src={"./image/TSPlogo01.webp"}
             as={NextImage}
             width={160}
             height={160}

@@ -1,8 +1,9 @@
 "use client";
 import React from "react";
-import { Image } from "@nextui-org/react";
 import NextImage from "next/image";
+import NextLink from "next/link";
 import Marquee from "react-fast-marquee";
+import { Link } from "@nextui-org/react";
 
 export default function CollegeTicker() {
   const colleges = [
@@ -74,9 +75,8 @@ export default function CollegeTicker() {
       </h2>
       <Marquee autoFill>
         {colleges.map((item, index) => (
-          <a href={item.link} target="_blank">
-            <Image
-              as={NextImage}
+          <Link isExternal href={item.link} as={NextLink}>
+            <NextImage
               key={index}
               src={item.image}
               alt={item.name}
@@ -85,7 +85,7 @@ export default function CollegeTicker() {
               className="m-6 scale-100 px-4 transition duration-300 ease-in-out hover:scale-110"
               loading="lazy"
             />
-          </a>
+          </Link>
         ))}
       </Marquee>
     </div>

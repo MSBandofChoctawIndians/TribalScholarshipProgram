@@ -20,6 +20,7 @@ export default function StatCard({
             className="h-6 w-6"
             as={NextImage}
             src={`./image/icon/${icon}.svg`}
+            alt={icon}
           />
         </div>
         <p className="ml-16 truncate text-sm font-medium text-gray-200">
