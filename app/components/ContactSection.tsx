@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { Input, RadioGroup, Radio, Textarea, Button } from "@nextui-org/react";
 

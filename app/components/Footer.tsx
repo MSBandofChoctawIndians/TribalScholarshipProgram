@@ -1,4 +1,5 @@
-import { Image, Link } from "@nextui-org/react";
+import { Image } from "@nextui-org/react";
+import NextImage from "next/image";
 
 export default function Footer() {
   return (
@@ -8,36 +9,22 @@ export default function Footer() {
           <Image
             src="./image/TSPlogo01.webp"
             alt="Tribal Scholarship Program"
+            as={NextImage}
             width={160}
             height={160}
           />
           <Image
             src="./image/seal.webp"
             alt="Mississippi Band of Choctaw Indians"
+            as={NextImage}
             width={160}
             height={160}
           />
         </div>
         <p className="text-md text-center lg:text-right">
-          This page is maintained by the{" "}
-          <Link
-            href="https://www.choctaw.org/media/index.html"
-            isExternal
-            color="primary"
-            showAnchorIcon
-          >
-            Office of Public Information
-          </Link>
-          . Copyright &copy; {new Date().getFullYear()}.{" "}
-          <Link
-            href="https://www.choctaw.org"
-            isExternal
-            color="primary"
-            showAnchorIcon
-          >
-            Mississippi Band of Choctaw Indians
-          </Link>
-          . All rights reserved.
+          This page is maintained by the Office of Public Information. Copyright{" "}
+          &copy; {new Date().getFullYear()}. Mississippi Band of Choctaw{" "}
+          Indians. All rights reserved.
         </p>
       </div>
     </footer>

@@ -1,3 +1,6 @@
+import { Image } from "@nextui-org/react";
+import NextImage from "next/image";
+
 export default function StatCard({
   label,
   icon,
@@ -13,7 +16,11 @@ export default function StatCard({
     <div className="overflow-hidden rounded-lg border-2 border-danger bg-black px-4 pt-5 shadow sm:px-6 sm:pt-6">
       <dt>
         <div className="absolute rounded-md bg-danger p-3">
-          <img className="h-6 w-6" src={`./image/icon/${icon}.svg`} />
+          <Image
+            className="h-6 w-6"
+            as={NextImage}
+            src={`./image/icon/${icon}.svg`}
+          />
         </div>
         <p className="ml-16 truncate text-sm font-medium text-gray-200">
           {label}

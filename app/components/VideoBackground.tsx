@@ -1,5 +1,6 @@
 "use client";
 import { Image } from "@nextui-org/react";
+import NextImage from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 
 const VideoBackground = () => {
@@ -40,6 +41,7 @@ const VideoBackground = () => {
         <div className="mb-10 flex items-center md:mb-0">
           <Image
             src="./image/TSPlogo01.webp"
+            as={NextImage}
             width={160}
             height={160}
             alt="Logo"
