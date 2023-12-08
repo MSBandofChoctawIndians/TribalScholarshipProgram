@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
-import { Image } from "@nextui-org/react";
-import CollegeTicker from "./components/Ticker";
+import React from "react";
+import dynamic from "next/dynamic";
 import VideoBackground from "./components/VideoBackground";
-import ContactForm from "./components/ContactSection";
-import Statistics from "./components/Statistics";
+
+const CollegeTicker = dynamic(() => import("./components/Ticker"));
+const Statistics = dynamic(() => import("./components/Statistics"));
+const ContactForm = dynamic(() => import("./components/ContactSection"));
 
 export const metadata: Metadata = {
   title: "Home | Tribal Scholarship Program",
@@ -37,8 +39,7 @@ export default function Page() {
   return (
     <>
       <VideoBackground />
-      <CollegeTicker />
-      <section className="top-[-40px] bg-tile bg-top bg-repeat">
+      <section className="bg-tile bg-top bg-repeat">
         <div className="top-4 mx-auto max-w-[1024px] bg-black px-4 pb-4 sm:px-6 lg:px-2">
           <div className="prose prose-slate mx-auto max-w-none pt-4 dark:prose-invert md:prose-lg lg:prose-xl">
             <h1 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
@@ -56,6 +57,11 @@ export default function Page() {
             </p>
           </div>
           <Statistics />
+        </div>
+      </section>
+      <CollegeTicker />
+      <section className="mt-[-30px] bg-tile bg-top bg-repeat">
+        <div className="top-4 mx-auto max-w-[1024px] bg-black px-4 pb-4 sm:px-6 lg:px-2">
           <ContactForm />
         </div>
       </section>
