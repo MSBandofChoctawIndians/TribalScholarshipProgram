@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="215" viewBox="0 0 310 215">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:#FCEE21;}
+	.st2{fill:#FCEE21;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+</style>
+<g>
+		<radialGradient id="SVGID_1_" cx="155" cy="107.5" r="147.2968" gradientTransform="matrix(1.0403 5.948249e-04 -4.758599e-04 0.8322 -6.1903 17.9447)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#FFFFFF"/>
+		<stop  offset="0.9283" style="stop-color:#000000"/>
+	</radialGradient>
+	<rect class="st0" width="310" height="215"/>
+	<path class="st1" d="M309.5,23.5H0v-10h309.5V23.5z M310,191H0.5v10H310V191z"/>
+	<ellipse class="st2" cx="154.5" cy="145.5" rx="68" ry="40"/>
+	<polygon class="st2" points="154.5,185.56 24.39,107.5 154.5,29.44 284.61,107.5 	"/>
+	<path class="st3" d="M86.5,144.5c0,0,61-43,68-40S86.5,144.5,86.5,144.5z"/>
+	<path class="st3" d="M93.5,195.5c-27-26-7-51-7-51"/>
+	<circle class="st4" cx="93.5" cy="195.5" r="3"/>
+	<path class="st4" d="M93.5,195.5l6-2l3.69,1l13.01-1c0,0,6.3,4,3.3,11s-8,6-8,6l-11-10l-4-0.93L93.5,195.5z"/>
+</g>
+</svg>
