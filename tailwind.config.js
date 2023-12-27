@@ -11,7 +11,7 @@ const config = {
   theme: {
     extend: {
       backgroundImage: {
-        tile: "linear-gradient(to right, transparent, black, black, black, transparent), url('/TribalScholarshipProgram/image/openeye.svg')",
+        tile: "linear-gradient(to right, transparent, black, black, black, transparent), url('/TribalScholarshipProgram/image/cap-border.svg')",
       },
     },
   },
