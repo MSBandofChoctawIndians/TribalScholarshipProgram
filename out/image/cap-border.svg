@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="310" height="215" viewBox="0 0 310 215" style="opacity:0.75">
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="215" viewBox="0 0 310 215">
 <style type="text/css">
-	.st0{fill:#74D7E7;}
-	.st1{fill:#B7EAF3;}
-	.st2{fill:#FFFFFF;}
+	.st0{fill:#74D7E7;opacity:0.7}
+	.st1{fill:#B7EAF3;opacity:0.7}
+	.st2{fill:#FFFFFF;opacity:0.7}
 </style>
 <path class="st0" d="M310,23.36H0V9.34h310V23.36z M310,205.66H0v-14.02h310V205.66z"/>
 <path class="st0" d="M284.61,107.5L154.5,29.44L24.39,107.5l62.14,37.28c-0.01,0.24-0.03,0.48-0.03,0.72
