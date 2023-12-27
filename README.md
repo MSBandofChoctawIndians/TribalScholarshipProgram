@@ -5,27 +5,61 @@
   </a>
 </p>
 
-<p align="center">
-  <img alt="Static Badge" src="https://img.shields.io/badge/React-v18.2.0-000?logo=react&link=https%3A%2F%2Freact.dev">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Nextjs-v14.0.2-FFF?logo=nextdotjs&link=https%3A%2F%2Fnextjs.org">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Tailwind%20CSS-v3.3.5-06B6D4?logo=tailwindcss&link=https%3A%2F%2Ftailwindcss.com">
-  <img alt="Static Badge" src="https://img.shields.io/badge/NextUI-v2.2.9-000?logo=nextui&link=https%3A%2F%2Fnextui.org">
-  <img alt="Static Badge" src="https://img.shields.io/badge/Framer%20Motion-v10.16.5-05F?logo=framer&link=https%3A%2F%2Fwww.framer.com%2Fmotion%2F">
-</p>
-
 ## Description
 
-This website is the landing page for the Tribal Scholarship Program for the Mississippi Band of Choctaw Indians.
+This website is the landing page for the Tribal Scholarship Program for the Mississippi Band of Choctaw Indians. It is built with React, TypeScript, and Next.js, and styled with Tailwind CSS.
 
-## Components
+## Project Structure
 
-### Video Background
+The project is structured as follows:
 
-Videos are stored in `public/video/`. In order to modify the playlist, you'll need to add the video URL to the `videos` array in `app/components/VideoBackground.tsx` then run `npm run deploy` in terminal.
+- [app/](app/): Contains the main application code.
+  - [about/](app/about/): Contains the About page.
+  - [components/](app/components/): Contains reusable components used across different pages.
+  - [documents/](app/documents/): Contains the Documents page.
+  - [faqs/](app/faqs/): Contains the FAQs page.
+  - [location/](app/location/): Contains the Location page.
+  - [otherscholarships/](app/otherscholarships/): Contains the Other Scholarships page.
+- [public/](public/): Contains static files like images and videos.
+- [next.config.js](next.config.js): Contains configuration for Next.js.
+- [package.json](package.json): Contains the list of project dependencies and scripts.
+- [postcss.config.js](postcss.config.js): Contains configuration for PostCSS.
+- [tailwind.config.js](tailwind.config.js): Contains configuration for Tailwind CSS.
+- [tsconfig.json](tsconfig.json): Contains configuration for TypeScript.
 
-### Ticker
+## Getting Started
 
-Institution logos (SVG or PNG) are stored in `public/image/`. In order to modify the ticker, you'll need to add the image name, image url, and cooresponding website to the `colleges` array in `public/components/Ticker.tsx` then run `npm run deploy` in terminal.
+To get started with the project, follow these steps:
+
+1. Clone the repository:
+
+```
+git clone https://github.com/msbandofchoctawindians/TribalScholarshipProgram.git
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+3. Start the development server:
+
+```
+npm run deploy
+```
+
+## Deployment
+
+To deploy the project, run the following command:
+
+```
+npm run deploy
+```
+
+## License
+
+This project is license under the terms of the MIT license.
 
 ## Authors
 

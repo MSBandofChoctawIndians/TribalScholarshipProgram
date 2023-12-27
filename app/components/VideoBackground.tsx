@@ -35,7 +35,7 @@ const VideoBackground = () => {
   }, [currentVideoIndex, videos]);
 
   return (
-    <header className="relative flex h-[85vh] items-center justify-center overflow-hidden">
+    <header className="relative flex h-[85vh] items-center justify-center overflow-hidden bg-black">
       <div className="relative z-30 mb-5 flex max-w-[1024px] flex-col items-center justify-between self-end rounded-md bg-black bg-opacity-50 p-5 md:flex-row">
         <div className="mb-10 flex items-center md:mb-0">
           <Image

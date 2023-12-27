@@ -1,4 +1,5 @@
 import { Image } from "@nextui-org/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -11,12 +12,14 @@ export default function Footer() {
             width={160}
             height={160}
           />
-          <Image
-            src="./image/seal.webp"
-            alt="Mississippi Band of Choctaw Indians"
-            width={160}
-            height={160}
-          />
+          <Link href="https://www.choctaw.org/">
+            <Image
+              src="./image/seal.webp"
+              alt="Mississippi Band of Choctaw Indians"
+              width={160}
+              height={160}
+            />
+          </Link>
         </div>
         <p className="text-md text-center lg:text-right">
           This page is maintained by the Office of Public Information. Copyright{" "}

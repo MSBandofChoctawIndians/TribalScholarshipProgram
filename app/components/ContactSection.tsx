@@ -66,14 +66,14 @@ const ContactForm = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 2 }}
-      className="mx-auto mt-8 max-w-[1024px] px-4 py-4 sm:px-6 lg:px-0"
+      className="mx-auto max-w-[1024px] px-4 py-8 sm:px-6 lg:px-0"
     >
       <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
         <p className="lead text-center">{formStatus}</p>
       </div>
     </motion.div>
   ) : (
-    <div className="mx-auto mt-8 max-w-[1024px] px-4 py-4 sm:px-6 lg:px-0">
+    <div className="mx-auto max-w-[1024px] px-4 py-8 sm:px-6 lg:px-0">
       <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
         <h2 className="text-center">Contact Us</h2>
         <p className="lead text-center">Please complete the following form:</p>

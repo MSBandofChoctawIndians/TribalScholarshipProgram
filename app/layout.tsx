@@ -25,7 +25,7 @@ export default function RootLayout({
           sizes="<generated>"
         />
       </Head>
-      <body>
+      <body className="bg-tile bg-top bg-repeat bg-blend-color-burn">
         <Providers>
           <NavBar />
           {children}
