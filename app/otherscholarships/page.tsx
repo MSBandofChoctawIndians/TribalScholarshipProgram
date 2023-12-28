@@ -107,7 +107,7 @@ export default function Page() {
       url: "https://www.dar.org/national-society/scholarships/american-indian",
     },
     {
-      name: "The Gates Millennium Scholars Program",
+      name: "Gates Millennium Scholars Program",
       description:
         "The Gates Millennium Scholars Program offers scholarships for Native American students pursuing a degree in a STEM field. The scholarship is open to undergraduate and graduate students. The scholarship is open to undergraduate and graduate students.",
       url: "https://www.gmsp.org",
@@ -153,6 +153,36 @@ export default function Page() {
       description:
         "The Native American Journalists Association offers scholarships for Native American students pursuing a degree in journalism. The scholarship is open to undergraduate and graduate students. The scholarship is open to undergraduate and graduate students.",
       url: "https://www.naja.com/programs/scholarships/",
+    },
+    {
+      name: "Jackie Robinson Foundation Scholarship",
+      description:
+        "The Jackie Robinson Foundation Scholarship is awarded to minority students pursuing a degree in any field.",
+      url: "https://www.jackierobinson.org/apply/",
+    },
+    {
+      name: "Society of Women Engineers Scholarships",
+      description:
+        "SWE Scholarships support those who identify as a woman and pursue an ABET-accredited bachelor or graduate student program in preparation for careers in engineering, engineering technology, and fields related to engineering globally.",
+      url: "https://swe.org/scholarships/",
+    },
+    {
+      name: "Truman D. Picard Scholarship",
+      description:
+        "The Truman D. Picard Scholarship is awarded to Native American students pursuing a degree in natural resources.",
+      url: "https://www.itcnet.org/about_us/scholarships.html",
+    },
+    {
+      name: "Future Farmers of America Scholarships",
+      description:
+        "The National FFA Organization offers scholarships for students pursuing a degree in agriculture.",
+      url: "https://www.ffa.org/participate/grants-and-scholarships/scholarships/",
+    },
+    {
+      name: "United Negro College Fund",
+      description:
+        "The United Negro College Fund (UNCF) is a comprehensive minority higher education assistance organization.",
+      url: "https://uncf.org/",
     },
   ];
   return (

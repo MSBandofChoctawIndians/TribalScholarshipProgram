@@ -16,7 +16,7 @@ export default function Page() {
             height="750"
             style={{
               border: 0,
-              filter: "grayscale(100%) invert(92%) contrast(83%)",
+              filter: "grayscale(50%) invert(95%) contrast(95%)",
             }}
             loading="lazy"
             allowFullScreen
