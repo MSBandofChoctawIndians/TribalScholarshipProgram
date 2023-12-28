@@ -118,6 +118,7 @@ const ContactForm = () => {
           <div className="sm:col-span-2">
             <div>
               <Input
+                type="email"
                 label="Email"
                 labelPlacement="outside"
                 placeholder="Enter your email"
@@ -133,6 +134,7 @@ const ContactForm = () => {
           <div className="sm:col-span-2">
             <div>
               <Input
+                type="tel"
                 label="Phone number"
                 labelPlacement="outside"
                 placeholder="Enter your phone number"
