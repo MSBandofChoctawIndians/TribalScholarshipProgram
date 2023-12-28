@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import React from "react";
 import dynamic from "next/dynamic";
 import VideoBackground from "./components/VideoBackground";
+import WeaveBand from "./components/WeaveBand";
 
 const CollegeTicker = dynamic(() => import("./components/Ticker"));
 const Statistics = dynamic(() => import("./components/Statistics"));
@@ -39,6 +40,7 @@ export default function Page() {
   return (
     <>
       <VideoBackground />
+      <WeaveBand />
       <section>
         <div className="top-4 mx-auto max-w-[1024px] bg-black px-4 pb-4 sm:px-6 lg:px-2">
           <div className="prose prose-slate mx-auto max-w-none pt-4 dark:prose-invert md:prose-lg lg:prose-xl">
