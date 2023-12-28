@@ -119,6 +119,7 @@ const ContactForm = () => {
             <div>
               <Input
                 type="email"
+                aria-labelledby="email"
                 label="Email"
                 labelPlacement="outside"
                 placeholder="Enter your email"
@@ -135,6 +136,7 @@ const ContactForm = () => {
             <div>
               <Input
                 type="tel"
+                aria-labelledby="phone"
                 label="Phone number"
                 labelPlacement="outside"
                 placeholder="Enter your phone number"

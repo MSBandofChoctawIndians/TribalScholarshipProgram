@@ -82,6 +82,78 @@ export default function Page() {
         "The American Nuclear Society offers a variety of scholarships for students pursuing a degree in nuclear science, nuclear engineering, or a nuclear-related field. The scholarships are open to undergraduate and graduate students. The American Nuclear Society also offers scholarships for high school students who are interested in pursuing a degree in nuclear science, nuclear engineering, or a nuclear-related field.",
       url: "https://www.ans.org/scholarships/",
     },
+    {
+      name: "American Physical Society Minority Scholarships",
+      description:
+        "The American Physical Society offers a scholarship for minority students pursuing a degree in physics. The scholarship is open to high school seniors, college freshmen, and college sophomores. The scholarship is open to high school seniors, college freshmen, and college sophomores.",
+      url: "https://www.aps.org/programs/minorities/honors/index.cfm",
+    },
+    {
+      name: "Association on American Indian Affairs Scholarship",
+      description:
+        "The Association on American Indian Affairs (AAIA) offers a scholarship for Native American students pursuing a degree in a STEM field. The scholarship is open to undergraduate and graduate students. The scholarship is open to undergraduate and graduate students.",
+      url: "https://www.indian-affairs.org/nativescholarship.html",
+    },
+    {
+      name: "Catching the Dream Scholarship",
+      description:
+        "Catching the Dream offers scholarships for Native American students pursuing a degree in a STEM field. The scholarship is open to undergraduate and graduate students. The scholarship is open to undergraduate and graduate students.",
+      url: "https://www.catchingthedream.org",
+    },
+    {
+      name: "Daughters of the American Revolution American Indian Scholarship",
+      description:
+        "The Daughters of the American Revolution offers a scholarship for Native American students pursuing a degree in a STEM field. The scholarship is open to undergraduate and graduate students. The scholarship is open to undergraduate and graduate students.",
+      url: "https://www.dar.org/national-society/scholarships/american-indian",
+    },
+    {
+      name: "The Gates Millennium Scholars Program",
+      description:
+        "The Gates Millennium Scholars Program offers scholarships for Native American students pursuing a degree in a STEM field. The scholarship is open to undergraduate and graduate students. The scholarship is open to undergraduate and graduate students.",
+      url: "https://www.gmsp.org",
+    },
+    {
+      name: "Indian Health Services Scholarship Program",
+      description:
+        "The Indian Health Services Scholarship Program offers scholarships for Native American students pursuing a degree in a STEM field. The scholarship is open to undergraduate and graduate students. The scholarship is open to undergraduate and graduate students.",
+      url: "https://www.ihs.gov/scholarship/apply/",
+    },
+    {
+      name: "International Order of the King's Daughters and Sons North American Indian Scholarship",
+      description:
+        "The International Order of the King's Daughters and Sons offers a scholarship for Native American students pursuing a degree in a STEM field. The scholarship is open to undergraduate and graduate students. The scholarship is open to undergraduate and graduate students.",
+      url: "https://iokds.org/native-american-scholarship/",
+    },
+    {
+      name: "Maureen L. and Howard N. Blitman, P.E., Scholarship to Promote Diversity in Engineering",
+      description:
+        "The National Society of Professional Engineers offers a scholarship for minority students pursuing a degree in engineering. The scholarship is open to high school seniors who are members of an underrepresented minority group, including Black/African American, Hispanic, Native North American, or Pacific Islander.",
+      url: "https://www.nspe.org/resources/students/scholarships/maureen-l-howard-n-blitman-pe-scholarship-promote-diversity",
+    },
+    {
+      name: "AGI Scholarship for Advancing Diversity in the Geoscience Profession",
+      description:
+        "The AGI Scholarship for Advancing Diversity in the Geoscience Profession is a scholarship program that provides financial support to Native American students pursuing higher education. The scholarship is open to Native American students who are enrolled in a tribe from the continental United States or Alaska. Applicants must be enrolled in an accredited college or university and have a minimum GPA of 2.5. The scholarship is open to students pursuing any degree program, including STEM, business, law, and medicine. The scholarship is open to students pursuing any degree program, including STEM, business, law, and medicine.",
+      url: "https://www.americangeosciences.org/scholarships/diversity/",
+    },
+    {
+      name: "National Action Council for Minorities in Engineering Scholarships",
+      description:
+        "The National Action Council for Minorities in Engineering (NACME) offers a scholarship for minority students pursuing a degree in engineering. The scholarship is open to high school seniors who are members of an underrepresented minority group, including Black/African American, Hispanic, Native North American, or Pacific Islander.",
+      url: "https://www.nacme.org/scholarships",
+    },
+    {
+      name: "National Association of Women in Construction Founders' Scholarship",
+      description:
+        "The National Association of Women in Construction Founders' Scholarship is awarded to women pursuing a career in the construction industry.",
+      url: "https://nawic.org/education/nfsf-scholarships/",
+    },
+    {
+      name: "Native American Journalists Association Scholarships",
+      description:
+        "The Native American Journalists Association offers scholarships for Native American students pursuing a degree in journalism. The scholarship is open to undergraduate and graduate students. The scholarship is open to undergraduate and graduate students.",
+      url: "https://www.naja.com/programs/scholarships/",
+    },
   ];
   return (
     <section className="top-[-40px]">

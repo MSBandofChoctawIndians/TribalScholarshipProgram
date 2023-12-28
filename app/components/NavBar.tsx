@@ -57,7 +57,7 @@ export default function NavBar() {
         />
       </NavbarContent>
 
-      <NavbarContent className="pr-3 md:hidden" justify="center">
+      <NavbarContent className="pr-3 md:hidden" justify="start">
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
             <Image

@@ -14,7 +14,10 @@ export default function Page() {
           <iframe
             width="100%"
             height="750"
-            style={{ border: 0 }}
+            style={{
+              border: 0,
+              filter: "grayscale(100%) invert(92%) contrast(83%)",
+            }}
             loading="lazy"
             allowFullScreen
             src="https://www.google.com/maps/embed/v1/place?q=107%20annex%20circle%2C%20choctaw%2C%20ms%2039350&key=AIzaSyDNcMoZR9-hG5Gl6jcNT_1iGmtpXTWhFAg"
