@@ -3,8 +3,8 @@ import React from "react";
 import dynamic from "next/dynamic";
 import VideoBackground from "./components/VideoBackground";
 import WeaveBand from "./components/WeaveBand";
-import CollegeTicker from "./components/Ticker";
 
+const CollegeTicker = dynamic(() => import("./components/Ticker"));
 const Statistics = dynamic(() => import("./components/Statistics"));
 const ContactForm = dynamic(() => import("./components/ContactSection"));
 
