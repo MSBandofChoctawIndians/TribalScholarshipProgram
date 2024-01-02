@@ -55,9 +55,6 @@ export default function NavBar() {
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
-      </NavbarContent>
-
-      <NavbarContent className="pr-3 md:hidden" justify="start">
         <Link href="/" color={"foreground"} as={NextLink}>
           <NavbarBrand>
             <Image
