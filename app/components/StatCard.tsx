@@ -30,7 +30,7 @@ export default function StatCard({
       <dd className="ml-16 flex items-baseline pb-6 sm:pb-7">
         <p className="text-2xl text-white">{number}</p>
         <p className="ml-2 flex items-baseline text-sm font-semibold text-green-600">
-          {increase && (
+          {increase ? (
             <>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -48,7 +48,7 @@ export default function StatCard({
               <span className="sr-only">Increased by</span>
               {increase}
             </>
-          )}
+          ) : null}
         </p>
       </dd>
     </div>
