@@ -7,8 +7,8 @@ export default function Page() {
         <div className="prose prose-slate mx-auto max-w-none pt-4 dark:prose-invert md:prose-lg lg:prose-xl">
           <Image
             width={1024}
-            height={715}
-            src="./image/tspstaff3.webp"
+            height={336}
+            src="./image/tspstaff2.webp"
             alt="Tribal Scholarship Program Staff"
             className="!mt-0"
             isBlurred
