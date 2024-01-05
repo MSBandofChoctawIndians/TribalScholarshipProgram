@@ -4,52 +4,52 @@ export default function Statistics() {
   const CurrentFunding = [
     {
       label: "Students",
-      icon: "student",
+      icon: "👫🏽",
       number: 414,
       increase: 74,
     },
     {
       label: "New Recipients",
-      icon: "student",
+      icon: "👫🏽",
       number: 119,
     },
     {
       label: "Full-time",
-      icon: "student",
+      icon: "👫🏽",
       number: 339,
     },
     {
       label: "Part-time",
-      icon: "student",
+      icon: "👫🏽",
       number: 18,
     },
     {
       label: "Dual Credit",
-      icon: "student",
+      icon: "👫🏽",
       number: 57,
       increase: 30,
     },
     {
       label: "4 Year Institutions",
-      icon: "student",
+      icon: "👫🏽",
       number: 214,
       increase: 28,
     },
     {
       label: "2 Year Institutions",
-      icon: "student",
+      icon: "👫🏽",
       number: 198,
       increase: 44,
     },
     {
       label: "Graduate School",
-      icon: "student",
+      icon: "👫🏽",
       number: 64,
       increase: 14,
     },
     {
       label: "Doctoral School",
-      icon: "student",
+      icon: "👫🏽",
       number: 9,
       increase: 6,
     },
@@ -58,25 +58,25 @@ export default function Statistics() {
   const StudentDiplomas = [
     {
       label: "Graduates",
-      icon: "student",
+      icon: "🧑🏽‍🎓",
       number: 41,
       increase: 20,
     },
     {
       label: "Associates Degree",
-      icon: "student",
+      icon: "🧑🏽‍🎓",
       number: 16,
       increase: 2,
     },
     {
       label: "Bachelors Degree",
-      icon: "student",
+      icon: "🧑🏽‍🎓",
       number: 19,
       increase: 4,
     },
     {
       label: "Masters Degree",
-      icon: "student",
+      icon: "🧑🏽‍🎓",
       number: 6,
       increase: 4,
     },
@@ -85,37 +85,37 @@ export default function Statistics() {
   const StudentAthletes = [
     {
       label: "Basketball",
-      icon: "student",
+      icon: "🏀",
       number: 16,
     },
     {
       label: "Softball",
-      icon: "student",
+      icon: "🥎",
       number: 6,
     },
     {
       label: "Cross Country / Track",
-      icon: "student",
+      icon: "👟",
       number: 5,
     },
     {
       label: "Football",
-      icon: "student",
+      icon: "🏈",
       number: 5,
     },
     {
       label: "Baseball",
-      icon: "student",
+      icon: "⚾",
       number: 4,
     },
     {
       label: "Soccer",
-      icon: "student",
+      icon: "⚽",
       number: 2,
     },
     {
       label: "Cheerleading",
-      icon: "student",
+      icon: "📣",
       number: 1,
     },
   ];
