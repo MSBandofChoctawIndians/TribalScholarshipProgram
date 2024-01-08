@@ -124,7 +124,7 @@ export default function Statistics() {
     <>
       <div className="py-4">
         <h2 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
-          Currently Funding
+          FY23 Funded
         </h2>
         <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {CurrentFunding.map((item, index) => (
@@ -140,7 +140,7 @@ export default function Statistics() {
       </div>
       <div className="py-4">
         <h2 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
-          Student Awarded Diplomas
+          FY23 Student Awarded Diplomas
         </h2>
         <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {StudentDiplomas.map((item, index) => (
@@ -156,7 +156,7 @@ export default function Statistics() {
       </div>
       <div className="py-4">
         <h2 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
-          Student Athletes
+          FY23 Student Athletes
         </h2>
         <dl className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {StudentAthletes.map((item, index) => (

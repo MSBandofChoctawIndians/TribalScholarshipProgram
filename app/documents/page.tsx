@@ -84,7 +84,7 @@ export default function Page() {
         <div className="prose prose-slate mx-auto max-w-none pt-4 md:prose-lg lg:prose-xl dark:prose-invert">
           <h1>Documents</h1>
           <p>Please click the links below to download the documents.</p>
-          <ul className="list-outside list-none">
+          <ul className="list-outside list-none p-0">
             {documents.map((document) => (
               <Fragment key={document.url}>
                 <li>

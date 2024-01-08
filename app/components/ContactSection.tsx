@@ -62,128 +62,141 @@ const ContactForm = () => {
   };
 
   return isSubmitted ? (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 2 }}
-      className="mx-auto max-w-[1024px] px-4 py-8 sm:px-6 lg:px-0"
-    >
-      <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
-        <p className="lead text-center">{formStatus}</p>
+    <section>
+      <div className="top-4 mx-auto max-w-[1024px] bg-black px-4 pb-4 sm:px-6 lg:px-2">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+          className="mx-auto max-w-[1024px] px-4 py-8 sm:px-6 lg:px-0"
+        >
+          <div className="prose prose-slate mx-auto max-w-none md:prose-lg lg:prose-xl dark:prose-invert">
+            <p className="lead text-center">{formStatus}</p>
+          </div>
+        </motion.div>
       </div>
-    </motion.div>
+    </section>
   ) : (
-    <div className="mx-auto max-w-[1024px] px-4 py-8 sm:px-6 lg:px-0">
-      <div className="prose prose-slate mx-auto max-w-none dark:prose-invert md:prose-lg lg:prose-xl">
-        <h2 className="text-center">Contact Us</h2>
-        <p className="lead text-center">Please complete the following form:</p>
+    <section>
+      <div className="top-4 mx-auto max-w-[1024px] bg-black px-4 pb-4 sm:px-6 lg:px-2">
+        <div className="mx-auto max-w-[1024px] px-4 py-8 sm:px-6 lg:px-0">
+          <div className="prose prose-slate mx-auto max-w-none md:prose-lg lg:prose-xl dark:prose-invert">
+            <h2 className="text-center">Contact Us</h2>
+            <p className="lead text-center">
+              Please complete the following form:
+            </p>
+          </div>
+          <form
+            onSubmit={handleSubmit}
+            className="mx-auto mt-8 max-w-xl sm:mt-10"
+          >
+            <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div>
+                <Input
+                  label="First name"
+                  labelPlacement="outside"
+                  placeholder="Enter your first name"
+                  value={firstName}
+                  onChange={(e) => setFirstName(e.target.value)}
+                  isRequired
+                  className="mb-4"
+                />
+              </div>
+              <div>
+                <Input
+                  label="Last name"
+                  labelPlacement="outside"
+                  placeholder="Enter your last name"
+                  value={lastName}
+                  onChange={(e) => setLastName(e.target.value)}
+                  isRequired
+                  className="mb-4"
+                />
+              </div>
+              <div className="sm:col-span-2">
+                <div>
+                  <Input
+                    label="College"
+                    labelPlacement="outside"
+                    placeholder="Enter your college"
+                    description="Leave blank if you are not currently enrolled in college"
+                    value={college}
+                    onChange={(e) => setCollege(e.target.value)}
+                    className="mb-4"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <div>
+                  <Input
+                    type="email"
+                    aria-labelledby="email"
+                    label="Email"
+                    labelPlacement="outside"
+                    placeholder="Enter your email"
+                    description="Provide your personal email address"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    aria-label="Email address"
+                    isRequired
+                    className="mb-4"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <div>
+                  <Input
+                    type="tel"
+                    aria-labelledby="phone"
+                    label="Phone number"
+                    labelPlacement="outside"
+                    placeholder="Enter your phone number"
+                    value={phoneNumber}
+                    onChange={(e) => setPhoneNumber(e.target.value)}
+                    aria-label="Phone number"
+                    isRequired
+                    className="mb-4"
+                  />
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <div>
+                  <RadioGroup
+                    label="Preferred contact method"
+                    orientation="horizontal"
+                    value={contactMethod}
+                    onChange={(e) => setContactMethod(e.target.value)}
+                    isRequired
+                    className="mb-4"
+                  >
+                    <Radio value="email">Email</Radio>
+                    <Radio value="phone">Phone</Radio>
+                  </RadioGroup>
+                </div>
+              </div>
+              <div className="sm:col-span-2">
+                <div>
+                  <Textarea
+                    label="Message"
+                    labelPlacement="outside"
+                    placeholder="Enter your message"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    isRequired
+                    className="mb-4"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className="mt-10">
+              <Button type="submit" color="danger" fullWidth>
+                Let's talk
+              </Button>
+            </div>
+          </form>
+        </div>
       </div>
-      <form onSubmit={handleSubmit} className="mx-auto mt-8 max-w-xl sm:mt-10">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-          <div>
-            <Input
-              label="First name"
-              labelPlacement="outside"
-              placeholder="Enter your first name"
-              value={firstName}
-              onChange={(e) => setFirstName(e.target.value)}
-              isRequired
-              className="mb-4"
-            />
-          </div>
-          <div>
-            <Input
-              label="Last name"
-              labelPlacement="outside"
-              placeholder="Enter your last name"
-              value={lastName}
-              onChange={(e) => setLastName(e.target.value)}
-              isRequired
-              className="mb-4"
-            />
-          </div>
-          <div className="sm:col-span-2">
-            <div>
-              <Input
-                label="College"
-                labelPlacement="outside"
-                placeholder="Enter your college"
-                description="Leave blank if you are not currently enrolled in college"
-                value={college}
-                onChange={(e) => setCollege(e.target.value)}
-                className="mb-4"
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <div>
-              <Input
-                type="email"
-                aria-labelledby="email"
-                label="Email"
-                labelPlacement="outside"
-                placeholder="Enter your email"
-                description="Provide your personal email address"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                aria-label="Email address"
-                isRequired
-                className="mb-4"
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <div>
-              <Input
-                type="tel"
-                aria-labelledby="phone"
-                label="Phone number"
-                labelPlacement="outside"
-                placeholder="Enter your phone number"
-                value={phoneNumber}
-                onChange={(e) => setPhoneNumber(e.target.value)}
-                aria-label="Phone number"
-                isRequired
-                className="mb-4"
-              />
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <div>
-              <RadioGroup
-                label="Preferred contact method"
-                orientation="horizontal"
-                value={contactMethod}
-                onChange={(e) => setContactMethod(e.target.value)}
-                isRequired
-                className="mb-4"
-              >
-                <Radio value="email">Email</Radio>
-                <Radio value="phone">Phone</Radio>
-              </RadioGroup>
-            </div>
-          </div>
-          <div className="sm:col-span-2">
-            <div>
-              <Textarea
-                label="Message"
-                labelPlacement="outside"
-                placeholder="Enter your message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                isRequired
-                className="mb-4"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="mt-10">
-          <Button type="submit" color="danger" fullWidth>
-            Let's talk
-          </Button>
-        </div>
-      </form>
-    </div>
+    </section>
   );
 };
 
