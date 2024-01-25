@@ -40,7 +40,6 @@ export default function Page() {
             src="./image/tspstaff2.webp"
             alt="Tribal Scholarship Program Staff"
             className="!mt-0"
-            isBlurred
           />
           <h1>About Us</h1>
           <p>

@@ -70,7 +70,7 @@ export default function CollegeTicker() {
   ];
   return (
     <div className="bg-[#420020] py-4">
-      <h2 className="text-center text-3xl font-extrabold leading-8 tracking-tight sm:text-4xl">
+      <h2 className="text-center text-3xl font-extrabold leading-8 tracking-tight text-white sm:text-4xl">
         FY23 Graduate Institutions
       </h2>
       <Marquee autoFill>
