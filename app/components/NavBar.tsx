@@ -1,3 +1,4 @@
+// app/components/NavBar.tsx
 "use client";
 
 import React, { useState } from "react";
@@ -116,7 +117,7 @@ export default function NavBar() {
         </NavbarItem>
       </NavbarContent>
 
-      <NavbarMenu>
+      <NavbarMenu className="pt-10">
         {navLinks.map((link, index) => (
           <NavbarMenuItem key={`${link}-${index}`}>
             <Link
