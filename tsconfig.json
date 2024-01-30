@@ -16,16 +16,17 @@
     "incremental": true,
     "plugins": [
       {
-        "name": "next"
-      }
-    ]
+        "name": "next",
+      },
+    ],
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     "next.config.js",
-    ".next/types/**/*.ts"
-, "app/components/TSPLogo.jsx"  ],
-  "exclude": ["node_modules"]
+    ".next/types/**/*.ts",
+    "app/components/TSPLogo.jsx",
+  ],
+  "exclude": ["node_modules"],
 }

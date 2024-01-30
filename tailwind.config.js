@@ -13,6 +13,9 @@ const config = {
       backgroundImage: {
         tile: "linear-gradient(to bottom right, #60C2D1, transparent, #60C2D1, transparent, #60C2D1, transparent, #60C2D1, transparent), url('/TribalScholarshipProgram/image/cap-border.svg')",
       },
+      animation: {
+        'text-reveal': 'text-reveal 2s linear forwards',
+      },
     },
   },
   darkMode: "class",

@@ -1,3 +1,6 @@
+"use client";
+import React, { useEffect, useState, useRef } from "react";
+
 export default function StatCard({
   label,
   icon,
@@ -9,13 +12,47 @@ export default function StatCard({
   number: number;
   increase: number | undefined;
 }) {
+  const [inView, setInView] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 1.0,
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
   return (
     <div className="overflow-hidden rounded-lg border-2 border-danger bg-background px-4 pt-5 text-foreground shadow sm:px-6 sm:pt-6">
       <dt>
         <div className="absolute rounded-md bg-danger p-3">
           <span className="text-2xl">{icon}</span>
         </div>
-        <p className="ml-16 truncate text-sm font-medium text-foreground-800 dark:text-foreground-600">
+        <p
+          ref={ref}
+          className={`ml-16 truncate text-sm font-medium text-foreground-800 dark:text-foreground-600 ${
+            inView ? 'animate-text-reveal' : ''
+          }`}
+        >
           {label}
         </p>
       </dt>
