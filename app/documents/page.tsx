@@ -34,35 +34,7 @@ export default function Page() {
   const documents = [
     {
       name: "Deadlines",
-      url: "./document/deadlines.pdf",
-    },
-    {
-      name: "Application",
-      url: "./document/application.pdf",
-    },
-    {
-      name: "Full Time New Student Checklist",
-      url: "./document/full time new student checklist.pdf",
-    },
-    {
-      name: "Part Time New Student Checklist",
-      url: "./document/part time new student checklist.pdf",
-    },
-    {
-      name: "Full Time Renewal Student Checklist",
-      url: "./document/full time renewal student checklist.pdf",
-    },
-    {
-      name: "Part Time Renewal Student Checklist",
-      url: "./document/part time renewal student checklist.pdf",
-    },
-    {
-      name: "Transcript Release Form",
-      url: "./document/transcript release form.pdf",
-    },
-    {
-      name: "Request for Transcript",
-      url: "./document/request for transcript.pdf",
+      url: "./document/deadline_dates.pdf",
     },
     {
       name: "Request for Certificate of Degree of Indian Blood",
@@ -90,19 +62,11 @@ export default function Page() {
     },
     {
       name: "Tribal Scholarship Program Policies & Procedures Manual",
-      url: "./document/tsp policies and procedures manual.pdf",
+      url: "./document/tsp_policies_and_procedures.pdf",
     },
     {
       name: "Verification of Receipt of Tribal Scholarship Policies Form",
-      url: "./document/verification of receipt of tsp policies form.pdf",
-    },
-    {
-      name: "Tutor Report Form",
-      url: "./document/tutor report form.pdf",
-    },
-    {
-      name: "Mid-Term Report Form",
-      url: "./document/mid-term report form.pdf",
+      url: "./document/verification_of_receipt_of_tsp_policies_form.pdf",
     },
   ];
 
