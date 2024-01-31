@@ -26,7 +26,6 @@
     "**/*.tsx",
     "next.config.js",
     ".next/types/**/*.ts",
-    "app/components/TSPLogo.jsx",
   ],
   "exclude": ["node_modules"],
 }
