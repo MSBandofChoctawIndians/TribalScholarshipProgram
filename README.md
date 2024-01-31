@@ -24,7 +24,7 @@ The project is structured as follows:
 - [next.config.js](next.config.js): Contains configuration for Next.js.
 - [package.json](package.json): Contains the list of project dependencies and scripts.
 - [postcss.config.js](postcss.config.js): Contains configuration for PostCSS.
-- [tailwind.config.js](tailwind.config.js): Contains configuration for Tailwind CSS.
+- [tailwind.config.ts](tailwind.config.ts): Contains configuration for Tailwind CSS.
 - [tsconfig.json](tsconfig.json): Contains configuration for TypeScript.
 
 ## Getting Started

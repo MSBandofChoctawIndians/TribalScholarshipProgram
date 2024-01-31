@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Link } from "@nextui-org/react";
+import { motion } from "framer-motion";
 
 const Deadline: React.FC = () => {
   const currentDate = new Date();
@@ -22,6 +23,20 @@ const Deadline: React.FC = () => {
     <>
       {isOpen && (
         <div className="w-full bg-danger py-2 text-center text-white">
+          <Link
+            isExternal
+            href="https://tribalscholarshipprogram.secure-platform.com/site"
+            showAnchorIcon
+            className="text-white"
+          >
+            <motion.p
+              className="m-0 text-lg font-bold"
+              animate={{ opacity: [1, 0, 1, 0, 1, 0, 1] }}
+              transition={{ duration: 3 }}
+            >
+              {bannerText}
+            </motion.p>
+          </Link>
           <button
             onClick={() => setIsOpen(false)}
             className="absolute right-0 top-0 m-2"
@@ -51,14 +66,6 @@ const Deadline: React.FC = () => {
               />
             </svg>
           </button>
-          <Link
-            isExternal
-            href="https://tribalscholarshipprogram.secure-platform.com/site"
-            showAnchorIcon
-            className="text-white"
-          >
-            <p className="m-0">{bannerText}</p>
-          </Link>
         </div>
       )}
     </>

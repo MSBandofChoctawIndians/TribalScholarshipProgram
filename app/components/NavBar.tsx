@@ -7,14 +7,13 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Link,
   NavbarMenuToggle,
   NavbarMenu,
   NavbarMenuItem,
   Button,
 } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
-import NextLink from "next/link";
+import Link from "next/link";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export default function NavBar() {
@@ -55,7 +54,7 @@ export default function NavBar() {
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         />
-        <Link href="/" color={"foreground"} as={NextLink}>
+        <Link href="./" color={"foreground"}>
           <NavbarBrand>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +72,7 @@ export default function NavBar() {
       </NavbarContent>
 
       <NavbarContent className="hidden gap-4 lg:flex" justify="center">
-        <Link href="/" color={"foreground"} as={NextLink}>
+        <Link href="./" color={"foreground"}>
           <NavbarBrand>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -88,16 +87,12 @@ export default function NavBar() {
             <p className="pl-2 font-bold text-inherit">TRIBAL SCHOLARSHIP</p>
           </NavbarBrand>
         </Link>
-        {navLinks.map((link, index) => (
-          <NavbarItem key={`${link}-${index}`}>
-            <Link
-              color={`${pathname === link.path ? "primary" : "foreground"}`}
-              href={link.path}
-              as={NextLink}
-            >
+        {navLinks.map((link) => (
+          <Link key={link.path} href={link.path} passHref color={"foreground"}>
+            <NavbarItem isActive={pathname === link.path}>
               {link.name}
-            </Link>
-          </NavbarItem>
+            </NavbarItem>
+          </Link>
         ))}
       </NavbarContent>
 
@@ -107,10 +102,8 @@ export default function NavBar() {
         </NavbarItem>
         <NavbarItem>
           <Button
-            as={Link}
             color="danger"
             href="https://tribalscholarshipprogram.secure-platform.com/site"
-            isExternal
           >
             Apply Now
           </Button>
@@ -119,18 +112,14 @@ export default function NavBar() {
 
       <NavbarMenu className="pt-10">
         {navLinks.map((link, index) => (
-          <NavbarMenuItem key={`${link}-${index}`}>
-            <Link
-              color={`${pathname === link.path ? "primary" : "foreground"}`}
-              className="w-full"
-              href={link.path}
-              as={NextLink}
-              size="lg"
+          <Link key={link.path} href={link.path} color={"foreground"}>
+            <NavbarMenuItem
+              isActive={pathname === link.path}
               onClick={() => setIsMenuOpen(false)}
             >
               {link.name}
-            </Link>
-          </NavbarMenuItem>
+            </NavbarMenuItem>
+          </Link>
         ))}
       </NavbarMenu>
     </Navbar>

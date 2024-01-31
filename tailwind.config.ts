@@ -1,8 +1,7 @@
-// tailwind.config.js
+import type { Config } from "tailwindcss";
 import { nextui } from "@nextui-org/react";
 
-/** @type {import('tailwindcss').Config} */
-const config = {
+export default {
   content: [
     "./app/**/*.{js,ts,tsx,mdx}",
     "./app/components/**/*.{js,ts,tsx,mdx}",
@@ -14,7 +13,7 @@ const config = {
         tile: "linear-gradient(to bottom right, #60C2D1, transparent, #60C2D1, transparent, #60C2D1, transparent, #60C2D1, transparent), url('/TribalScholarshipProgram/image/cap-border.svg')",
       },
       animation: {
-        'text-reveal': 'text-reveal 2s linear forwards',
+        "text-reveal": "text-reveal 2s linear forwards",
       },
     },
   },
@@ -56,6 +55,4 @@ const config = {
       },
     }),
   ],
-};
-
-export default config;
+} satisfies Config;
