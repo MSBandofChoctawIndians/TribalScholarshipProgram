@@ -101,12 +101,12 @@ export default function NavBar() {
           <ThemeSwitcher />
         </NavbarItem>
         <NavbarItem>
-          <Button
-            color="danger"
+          <Link
             href="https://tribalscholarshipprogram.secure-platform.com/site"
+            target="_blank"
           >
-            Apply Now
-          </Button>
+            <Button color="danger">Apply Now</Button>
+          </Link>
         </NavbarItem>
       </NavbarContent>
 

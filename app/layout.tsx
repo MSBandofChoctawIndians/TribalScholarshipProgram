@@ -35,6 +35,21 @@ export default function RootLayout({
           {children}
           <Footer />
         </Providers>
+        <script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=G-BT1GKDHNJ3`}
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BT1GKDHNJ3');
+            `,
+          }}
+        />
       </body>
     </html>
   );
