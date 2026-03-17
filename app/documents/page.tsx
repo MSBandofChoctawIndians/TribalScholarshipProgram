@@ -5,6 +5,9 @@ import { Fragment, useState } from "react";
 
 export default function Page() {
   const [showVideo, setShowVideo] = useState(false);
+    const [accessGranted, setAccessGranted] = useState(false);
+  const [code, setCode] = useState("");
+  const correctCode = "CHOCTAW2026"; // ← change this
 
   const documents = [
     {
@@ -73,7 +76,7 @@ export default function Page() {
           </ul>
 
           {/* Orientation Video Button */}
-          <div className="not-prose mt-4 ml-10 w-full flex justify-start">
+          <div className="not-prose mt-4 w-full flex justify-start sm:ml-10">
             <Button
               color="danger"
               variant="solid"
@@ -85,19 +88,47 @@ export default function Page() {
             </Button>
           </div>
 
-          {/* Video Section */}
-          {showVideo && (
-            <div className="mt-6">
-              <h2 className="text-2xl font-bold mb-4 text-center">
-                Tribal Scholarship Orientation Video
+           {/* Code Input */}
+          {showVideo && !accessGranted && (
+            <div className="mt-6 text-center">
+              <h2 className="text-xl font-bold mb-2">
+                Enter Access Code
               </h2>
 
-              <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
+              <input
+                type="password"
+                value={code}
+                onChange={(e) => setCode(e.target.value)}
+                className="border p-2 rounded w-64"
+              />
+
+              <div className="mt-4">
+                <Button
+                  onPress={() => {
+                    if (code === correctCode) {
+                      setAccessGranted(true);
+                    } else {
+                      alert("Incorrect code");
+                    }
+                  }}
+                >
+                  Submit
+                </Button>
+              </div>
+            </div>
+          )}
+
+          {/* Video */}
+          {accessGranted && (
+            <div className="mt-6">
+              <h2 className="text-2xl font-bold text-center mb-4">
+                Orientation Video
+              </h2>
+
+              <div className="aspect-video">
                 <iframe
                   className="w-full h-full"
                   src="https://www.youtube.com/embed/bHAXhTyAdQI"
-                  title="Tribal Scholarship Orientation Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
               </div>
