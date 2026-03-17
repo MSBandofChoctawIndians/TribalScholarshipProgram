@@ -1,36 +1,11 @@
-import { Button, Link } from "@nextui-org/react";
-import { Fragment } from "react";
-import { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "Documents | Tribal Scholarship Program",
-  description:
-    "The Scholarship Program pledges to provide high-quality, pre-college counseling by: helping students explore majors and assisting with admission, housing and financial aid applications and the registration process at nearby colleges; making on-campus visits to monitor student progress and to assist in resolving problems; and providing financial assistance by using the Title IV Cost of Attendance from each college or university to set the scholarship award amount for each individual student.",
-  openGraph: {
-    title: "Documents | Tribal Scholarship Program",
-    description:
-      "The Scholarship Program pledges to provide high-quality, pre-college counseling by: helping students explore majors and assisting with admission, housing and financial aid applications and the registration process at nearby colleges; making on-campus visits to monitor student progress and to assist in resolving problems; and providing financial assistance by using the Title IV Cost of Attendance from each college or university to set the scholarship award amount for each individual student.",
-    url: "https://scholarship.choctaw.org/documents",
-    siteName: "Tribal Scholarship Program",
-    images: [
-      {
-        url: "https://msbandofchoctawindians.github.io/TribalScholarshipProgram/image/meta.jpg",
-        width: 1200,
-        height: 630,
-      },
-      {
-        url: "https://msbandofchoctawindians.github.io/TribalScholarshipProgram/image/meta-alt.jpg",
-        width: 1800,
-        height: 1600,
-        alt: "My custom alt",
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-};
+import { Button, Link } from "@nextui-org/react";
+import { Fragment, useState } from "react";
 
 export default function Page() {
+  const [showVideo, setShowVideo] = useState(false);
+
   const documents = [
     {
       name: "Deadlines",
@@ -76,6 +51,7 @@ export default function Page() {
         <div className="prose prose-slate mx-auto max-w-none pt-4 md:prose-lg lg:prose-xl dark:prose-invert">
           <h1>Documents</h1>
           <p>Please click the links below to download the documents.</p>
+
           <ul className="list-outside list-none p-0">
             {documents.map((document) => (
               <Fragment key={document.url}>
@@ -95,6 +71,38 @@ export default function Page() {
               </Fragment>
             ))}
           </ul>
+
+          {/* Orientation Video Button */}
+          <div className="not-prose mt-4 ml-10 w-full flex justify-start">
+            <Button
+              color="danger"
+              variant="solid"
+              size="lg"
+              className="whitespace-normal leading-tight"
+              onPress={() => setShowVideo(true)}
+            >
+              Orientation Video and Test
+            </Button>
+          </div>
+
+          {/* Video Section */}
+          {showVideo && (
+            <div className="mt-6">
+              <h2 className="text-2xl font-bold mb-4 text-center">
+                Tribal Scholarship Orientation Video
+              </h2>
+
+              <div className="aspect-video overflow-hidden rounded-lg shadow-lg">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/bHAXhTyAdQI"
+                  title="Tribal Scholarship Orientation Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </section>
